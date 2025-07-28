@@ -14,20 +14,24 @@ const TechnologiesPage = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-24 pb-20 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+        <section className="pt-24 pb-16 bg-gradient-hero">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <Badge variant="outline" className="mb-6">Our Core Technologies</Badge>
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6">
-                Cutting-Edge Technology Stack
+            <div className="text-center max-w-4xl mx-auto">
+              <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
+              Our Core Technologies
+              </Badge>
+              <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
+              Cutting-Edge Technology Stack
               </h1>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                We leverage a diverse and robust set of technologies to build scalable, 
+              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+              We leverage a diverse and robust set of technologies to build scalable, 
                 efficient, and innovative web-based solutions for our clients.
               </p>
+              
             </div>
           </div>
         </section>
+     
 
         {/* Technologies Grid */}
         <section className="py-20 bg-background">

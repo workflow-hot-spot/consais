@@ -53,28 +53,6 @@ const ContactPage = () => {
     }
   ];
 
-  const officeInfo = [
-    {
-      icon: <MapPin className="h-6 w-6" />,
-      title: "Headquarters",
-      details: ["India", "Remote-first operations", "Global client coverage"]
-    },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM IST", "Saturday: 10:00 AM - 4:00 PM IST", "Emergency support: 24/7"]
-    },
-    {
-      icon: <Globe className="h-6 w-6" />,
-      title: "Time Zones",
-      details: ["Primary: IST (UTC+5:30)", "Coverage: Global", "Flexible scheduling available"]
-    },
-    {
-      icon: <HeadphonesIcon className="h-6 w-6" />,
-      title: "Support Levels",
-      details: ["Basic: Email support", "Premium: Priority phone/chat", "Enterprise: Dedicated manager"]
-    }
-  ];
 
   const inquiryTypes = [
     {
@@ -184,25 +162,7 @@ const ContactPage = () => {
             </div>
 
             {/* Office Information */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {officeInfo.map((info, index) => (
-                <Card key={info.title} className="border-border/50 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-3 mb-4">
-                      <div className="p-2 bg-primary/10 rounded-lg text-primary">
-                        {info.icon}
-                      </div>
-                      <h3 className="font-semibold text-foreground">{info.title}</h3>
-                    </div>
-                    <ul className="space-y-2">
-                      {info.details.map((detail, idx) => (
-                        <li key={idx} className="text-muted-foreground text-sm">{detail}</li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+          
           </div>
         </section>
 

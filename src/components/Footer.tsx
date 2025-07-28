@@ -157,7 +157,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-background/80 text-sm mb-4 md:mb-0">
-              <p>&copy; 2024 Workflow Catalyst. All rights reserved.</p>
+              <p>&copy; 2025 Workflow Catalyst. All rights reserved.</p>
             </div>
             
             <div className="flex items-center space-x-6">

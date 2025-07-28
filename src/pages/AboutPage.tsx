@@ -10,32 +10,32 @@ import { Link } from "react-router-dom";
 const AboutPage = () => {
   const timeline = [
     {
-      year: "2019",
+      year: "2020",
       title: "Company Founded",
       description: "Started with a vision to empower SMEs through digital transformation"
     },
     {
-      year: "2020",
+      year: "2021",
       title: "First Major Milestone",
       description: "Successfully delivered 10+ enterprise solutions during challenging times"
     },
     {
-      year: "2021",
+      year: "2022",
       title: "Team Expansion",
       description: "Grew our expert team to cover all major technology domains"
     },
     {
-      year: "2022",
+      year: "2023",
       title: "Cloud Specialization",
       description: "Became certified partners with AWS, Azure, and Google Cloud"
     },
     {
-      year: "2023",
+      year: "2024",
       title: "50+ Projects",
       description: "Reached milestone of 50+ successful project deliveries"
     },
     {
-      year: "2024",
+      year: "2025",
       title: "Innovation Focus",
       description: "Expanding into AI/ML and advanced automation solutions"
     }

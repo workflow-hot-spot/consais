@@ -9,36 +9,36 @@ const Team = () => {
       name: "Nitish Pandey",
       role: "Head of Strategy & Finance",
       description: "Nitish leads our strategic vision, ensuring our solutions are innovative and aligned with market needs. His expertise in enterprise architecture drives our success.",
-      image: "https://workflowcatalyst.com/static/images/np.jpeg",
+      image: "/src/assets/nitish.png",
       specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"]
     },
     {
       name: "Siddarth Chaturvedi",
       role: "Head of Business",
       description: "Sid oversees all development cycles, ensuring high-quality code and efficient delivery of our web-based applications.",
-      image: "https://workflowcatalyst.com/static/images/sc.jpg",
+      image: "src/assets/sid.png",
       specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"]
     },
     {
       name: "Sunil Kunwar",
       role: "Chief Architect & Engineer",
       description: "Sunil works to design tailored, robust solutions based on the size, budget and vision of the client. Be it ETL, workflow, and CRM solutions.",
-      image: "https://workflowcatalyst.com/static/images/sunil.jpg",
+      image: "src/assets/sunil.png",
       specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"]
     },
     {
       name: "Brijesh Kannaujia",
       role: "Head of Projects & Quality",
       description: "Brijesh works to deliver high performant solutions to the client and to get a sign off.",
-      image: "https://workflowcatalyst.com/static/images/bk.jpg",
+      image: "src/assets/brijesh.png",
       specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"]
     },
     {
       name: "Rahul Ragtah",
       role: "Design and Marketing Head",
       description: "Rahul works to deliver right user experience. He is also the SEO expert who helps clients to get the right audience.",
-      image: "https://workflowcatalyst.com/static/images/rr.jpg",
-      specialties: ["UX/UI Design", "Digital Marketing", "SEO Optimization", "Brand Strategy"]
+      image: "src/assets/rahul.png",
+      specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"]
     }
   ];
 

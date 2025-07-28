@@ -268,17 +268,18 @@ const Home = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {[
-                { name: "Citi Bank", industry: "Banking & Finance", logo: "/src/assets/citi-logo.png" },
-                { name: "Power2SME", industry: "B2B Marketplace", logo: "/src/assets/power2sme-logo.png" },
-                { name: "MakeMyTrip", industry: "Travel & Tourism", logo: "/src/assets/makemytrip-logo.png" },
-                { name: "BizFunds", industry: "Financial Services", logo: "/src/assets/bizfunds-logo.png" },
-                { name: "Snapdeal", industry: "E-commerce", logo: "/src/assets/snapdeal-logo.png" },
-                { name: "InfoEdge", industry: "Information Services", logo: "/src/assets/infoedge-logo.png" },
-                { name: "Gaana", industry: "Music Streaming", logo: "/src/assets/gaana-logo.png" }
+                { name: "Citi Bank", industry: "Banking & Finance", logo: "/src/assets/Citibank-Logo.png" },
+                { name: "Power2SME", industry: "B2B Marketplace", logo: "/src/assets/p2s.png" },
+                { name: "MakeMyTrip", industry: "Travel & Tourism", logo: "/src/assets/mmt.png" },
+                { name: "BizFunds", industry: "Financial Services", logo: "/src/assets/bizfunds.png" },
+                { name: "Snapdeal", industry: "E-commerce", logo: "/src/assets/sd.png" },
+                { name: "InfoEdge", industry: "Information Services", logo: "/src/assets/infoedge.png" },
+                { name: "Gaana", industry: "Music Streaming", logo: "/src/assets/gaana.png" },
+                { name: "Axis Max Life", industry: "Insurance", logo: "/src/assets/axis.png" }
               ].map((brand, index) => (
                 <Card key={brand.name} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardContent className="p-6 text-center">
-                    <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 p-2 group-hover:scale-105 transition-transform duration-300 shadow-sm">
+                    <div className="w-40 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 p-2 group-hover:scale-105 transition-transform duration-300 shadow-sm">
                       <img 
                         src={brand.logo} 
                         alt={`${brand.name} logo`}

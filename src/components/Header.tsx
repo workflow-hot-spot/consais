@@ -9,8 +9,9 @@ const Header = () => {
   const location = useLocation();
 
   const navigationItems = [
+    { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
-    { label: "About", href: "/about" },
+    { label: "Technologies", href: "/technologies" },
     { label: "Team", href: "/team" },
     { label: "Contact", href: "/contact" },
   ];
