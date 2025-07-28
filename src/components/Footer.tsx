@@ -1,0 +1,183 @@
+import { Button } from "@/components/ui/button";
+import { 
+  Phone, 
+  Mail, 
+  MapPin, 
+  Linkedin, 
+  Twitter, 
+  Github,
+  ArrowUp
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import logo from "@/assets/workflow-catalyst-logo.png";
+
+const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const services = [
+    "Platform Solutions",
+    "Digital Transformation", 
+    "Custom Web Development",
+    "Software Testing",
+    "UX/UI Design",
+    "Security & Optimization"
+  ];
+
+  const quickLinks = [
+    { label: "About Us", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Technologies", href: "/technologies" },
+    { label: "Our Team", href: "/team" },
+    { label: "Contact", href: "/contact" },
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" }
+  ];
+
+  return (
+    <footer className="bg-gradient-to-br from-foreground to-foreground/90 text-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main Footer Content */}
+        <div className="py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div className="lg:col-span-1">
+              <Link to="/" className="flex items-center space-x-3 mb-6">
+                <img src={logo} alt="Workflow Catalyst" className="h-10 w-10 invert" />
+                <span className="text-2xl font-bold">Workflow Catalyst</span>
+              </Link>
+              <p className="text-background/80 mb-6 leading-relaxed">
+                Empowering SMEs through digital transformation with cutting-edge 
+                technology solutions and expert consulting services.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90">+91 9910815132</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90">info@workflowcatalyst.com</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90">India</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Services</h3>
+              <ul className="space-y-3">
+                {services.map((service) => (
+                  <li key={service}>
+                    <Link 
+                      to="/services"
+                      className="text-background/80 hover:text-primary-glow transition-colors duration-300 text-sm"
+                    >
+                      {service}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Quick Links</h3>
+              <ul className="space-y-3">
+                {quickLinks.map((link) => (
+                  <li key={link.label}>
+                    {link.href.startsWith('#') ? (
+                      <a 
+                        href={link.href}
+                        className="text-background/80 hover:text-primary-glow transition-colors duration-300 text-sm"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={link.href}
+                        className="text-background/80 hover:text-primary-glow transition-colors duration-300 text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Newsletter & Social */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Stay Connected</h3>
+              <p className="text-background/80 mb-6 text-sm">
+                Follow us for the latest updates on technology trends and digital transformation insights.
+              </p>
+              
+              {/* Social Links */}
+              <div className="flex space-x-4 mb-6">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="bg-background/10 border-background/20 text-background hover:bg-primary-glow hover:text-foreground"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="bg-background/10 border-background/20 text-background hover:bg-primary-glow hover:text-foreground"
+                >
+                  <Twitter className="h-5 w-5" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="bg-background/10 border-background/20 text-background hover:bg-primary-glow hover:text-foreground"
+                >
+                  <Github className="h-5 w-5" />
+                </Button>
+              </div>
+
+              <Button 
+                variant="outline"
+                className="bg-primary-glow/20 border-primary-glow text-background hover:bg-primary-glow hover:text-foreground w-full"
+                onClick={() => window.open('https://wa.me/919910815132', '_blank')}
+              >
+                Start Your Project
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-background/20 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text-background/80 text-sm mb-4 md:mb-0">
+              <p>&copy; 2024 Workflow Catalyst. All rights reserved.</p>
+            </div>
+            
+            <div className="flex items-center space-x-6">
+              <p className="text-background/60 text-xs">
+                Made with ❤️ for SME Digital Transformation
+              </p>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={scrollToTop}
+                className="text-background/80 hover:text-primary-glow hover:bg-background/10"
+              >
+                <ArrowUp className="h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
