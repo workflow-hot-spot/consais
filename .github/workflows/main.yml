@@ -1,0 +1,46 @@
+name: Deploy MERN/MEVN App to VPS
+
+on:
+  push:
+    branches:
+      - main # This workflow will run on pushes to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # Use a fresh Ubuntu runner for each job
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4 # Action to check out your repository code
+    - name: Set up Node.js
+      uses: actions/setup-node@v4 # Action to set up Node.js
+      with:
+        node-version: '20.x' # Use a recent LTS version of Node.js
+
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.8.0 # Action to set up SSH agent for secure key handling
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }} # Your SSH private key (stored as a GitHub Secret)
+
+    # --- Frontend Deployment ---
+     
+  
+
+    - name: Deploy Frontend Build to Nginx Static Root
+      run: |
+        # Copy the contents of the built frontend (e.g., 'build' folder) to Nginx's static root
+        # Adjust 'build' to 'dist' if Vite creates a 'dist' folder
+        scp -r -o StrictHostKeyChecking=no ./frontend/* ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }}:/home/${{ secrets.SSH_USERNAME }}/website/frontend/
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm install"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm run build"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "sudo rm -rf /var/www/html/*"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && mv dist/* /var/www/html/"
+
+    
+
+    - name: Test Nginx configuration and Reload Nginx
+      run: |
+        # Test Nginx config for syntax errors
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "sudo nginx -t"
+        # Reload Nginx to apply changes gracefully (preferred over restart for static files)
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "sudo systemctl restart nginx"
