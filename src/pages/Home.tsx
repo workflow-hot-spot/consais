@@ -258,7 +258,7 @@ const Home = () => {
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4">Trusted Partners</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Brands We've Worked With
+                Engines At These Brands Have A Little Bit Of Workflow Catalyst
               </h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto mb-12">
               The  team has multi-decade experience defining and building robust  solutions for leading organizations across various sectors, helping them achieve their digitalization goals.

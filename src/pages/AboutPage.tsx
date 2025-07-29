@@ -101,10 +101,36 @@ const AboutPage = () => {
               <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
                 Empowering SMEs Through Digital Excellence
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+              
+              <section id="about" className="py-16 sm:py-20 lg:py-24 bg-blue-50">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+       
+        <div className="md:w-1/1 text-center md:text-left">
+        {/*}  <!---<p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
                 We are a team of experts with decades of combined experience in technology, business strategy, and digital transformation. 
                 We use innovative mix of frameworks to design solutions and help you launch long term strategic digital transformation initiatives.
               </p>
+              --->
+           */}
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Workflow + Catalyst:</h3>
+              
+            <p className="text-gray-700 leading-relaxed mb-4">
+                Our name embodies our core purpose. <i>'Workflow'</i> signifies the precise, optimized sequence of tasks that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. <i>'Catalyst'</i> represents our role as the transformative agent – we don't just observe; we accelerate, initiate, and enable profound positive change. Together, **Workflow Catalyst** ensures your business achieves more than the sum of its individual parts, driving synergistic growth through intelligent design and execution.
+            </p>
+
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Our Vision</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+                To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in trading and finance, pioneering intelligent, intuitive, and secure web-based solutions that unlock unprecedented operational efficiency and foster sustainable growth in a rapidly digitizing world.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Our Mission</h3>
+            <p className="text-gray-700 leading-relaxed">
+                To empower corporate teams by designing and implementing super robust, intuitive, and secure workflows and applications. We transform complex data into actionable insights, enabling information-rich environments that drive efficiency, reduce friction, and accelerate your digitalization journey.
+            </p>
+        </div>
+    </div>
+</section>
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
                   Work With Us
