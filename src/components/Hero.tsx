@@ -2,8 +2,93 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { Link } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroSlides = [
+    {
+      badge: "🚀 Driving Digital Excellence",
+      title: "Innovate. Transform.",
+      titleHighlight: "Achieve.",
+      subtitle: "Driving digital excellence with cutting-edge solutions tailored for your business success.",
+      stats: [
+        { value: "40+", label: "Projects Delivered" },
+        { value: "25+", label: "Years of Experience" },
+        { value: "100%", label: "Client Satisfaction" },
+        { value: "24/7", label: "Support" },
+      ]
+    },
+    {
+      badge: "⚡ Transforming Ideas With AI, IoT, Blockchain",
+      title: "Web & Mobile",
+      titleHighlight: "Application Development",
+      subtitle: "Specialized app development powered by advanced AI technology, generative frameworks, and modern solutions.",
+      stats: [
+        { value: "1000+", label: "Clients Served" },
+        { value: "50+", label: "AI Projects" },
+        { value: "5⭐", label: "Client Rating" },
+        { value: "24/7", label: "Global Support" },
+      ]
+    }
+  ];
+
+  const HeroSlide = ({ slide }: { slide: typeof heroSlides[0] }) => (
+    <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-4xl mx-auto animate-fade-in">
+        {/* Badge */}
+        <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary-foreground border border-primary/20 backdrop-blur-sm mb-6">
+          <span className="text-sm font-medium">{slide.badge}</span>
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+          {slide.title}{" "}
+          <span className="bg-gradient-to-r from-accent to-primary-glow bg-clip-text text-transparent">
+            {slide.titleHighlight}
+          </span>
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          {slide.subtitle}
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex justify-center mb-12">
+          <Link to="/contact">
+            <Button 
+              variant="gradient" 
+              size="xl" 
+              className="group"
+            >
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+          {slide.stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-3xl font-bold text-primary-foreground mb-2">{stat.value}</div>
+              <div className="text-primary-foreground/80 text-sm">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -40,65 +125,18 @@ const Hero = () => {
       <div className="absolute bottom-1/3 left-20 w-18 h-18 bg-accent/15 rounded-full animate-drift blur-xl" style={{ animationDelay: '3s' }}></div>
       <div className="absolute top-20 right-1/3 w-14 h-14 bg-primary/15 rounded-full animate-pulse-glow blur-xl" style={{ animationDelay: '5s' }}></div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary-foreground border border-primary/20 backdrop-blur-sm mb-6">
-            <span className="text-sm font-medium">🚀 Driving Digital Excellence</span>
-          </div>
-
-          {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Innovate. Transform.{" "}
-            <span className="bg-gradient-to-r from-accent to-primary-glow bg-clip-text text-transparent">
-              Achieve.
-            </span>
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Driving digital excellence with cutting-edge solutions tailored for your business success.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex justify-center mb-12">
-          <Link to="/contact">
-            <Button 
-              variant="gradient" 
-              size="xl" 
-              className="group"
-              
-            >
-              
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-             
-            </Button>
-            </Link>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">40+</div>
-              <div className="text-primary-foreground/80 text-sm">Projects Delivered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">25+</div>
-              <div className="text-primary-foreground/80 text-sm">Years of Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">100%</div>
-              <div className="text-primary-foreground/80 text-sm">Client Satisfaction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">24/7</div>
-              <div className="text-primary-foreground/80 text-sm">Support</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Carousel Content */}
+      <Carousel className="w-full" opts={{ loop: true }}>
+        <CarouselContent>
+          {heroSlides.map((slide, index) => (
+            <CarouselItem key={index}>
+              <HeroSlide slide={slide} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-8 bg-background/20 border-primary-foreground/20 text-primary-foreground hover:bg-primary/20" />
+        <CarouselNext className="right-8 bg-background/20 border-primary-foreground/20 text-primary-foreground hover:bg-primary/20" />
+      </Carousel>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
