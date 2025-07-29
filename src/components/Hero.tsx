@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "/images/hero-bg.jpg";
 import { Link } from "react-router-dom";
 import {
   Carousel,

@@ -260,22 +260,21 @@ const Home = () => {
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Brands We've Worked With
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                We're proud to have partnered with leading organizations across various industries 
-                to deliver exceptional digital solutions.
-              </p>
+          <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto mb-12">
+              The  team has multi-decade experience defining and building robust  solutions for leading organizations across various sectors, helping them achieve their digitalization goals.
+            They are now available to streamline your operations with low cost yet intuitive and secure customer facing or internal facing use cases.</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {[
-                { name: "Citi Bank", industry: "Banking & Finance", logo: "/src/assets/Citibank-Logo.png" },
-                { name: "Power2SME", industry: "B2B Marketplace", logo: "/src/assets/p2s.png" },
-                { name: "MakeMyTrip", industry: "Travel & Tourism", logo: "/src/assets/mmt.png" },
-                { name: "BizFunds", industry: "Financial Services", logo: "/src/assets/bizfunds.png" },
-                { name: "Snapdeal", industry: "E-commerce", logo: "/src/assets/sd.png" },
-                { name: "InfoEdge", industry: "Information Services", logo: "/src/assets/infoedge.png" },
-                { name: "Gaana", industry: "Music Streaming", logo: "/src/assets/gaana.png" },
-                { name: "Axis Max Life", industry: "Insurance", logo: "/src/assets/axis.png" }
+                { name: "Citi Bank", industry: "Banking & Finance", logo: "/images/Citibank-Logo.png" },
+                { name: "Power2SME", industry: "B2B Marketplace", logo: "/images/p2s.png" },
+                { name: "MakeMyTrip", industry: "Travel & Tourism", logo: "/images/mmt.png" },
+                { name: "BizFunds", industry: "Financial Services", logo: "/images/bizfunds.png" },
+                { name: "Snapdeal", industry: "E-commerce", logo: "/images/sd.png" },
+                { name: "InfoEdge", industry: "Information Services", logo: "/images/infoedge.png" },
+                { name: "Gaana", industry: "Music Streaming", logo: "/images/gaana.png" },
+                { name: "Axis Max Life", industry: "Insurance", logo: "/images/axis.png" }
               ].map((brand, index) => (
                 <Card key={brand.name} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardContent className="p-6 text-center">

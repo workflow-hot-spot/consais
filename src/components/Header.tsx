@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/workflow-catalyst-logo.png";
+import logo from "/images/workflow-catalyst-logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,

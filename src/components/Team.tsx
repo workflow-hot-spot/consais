@@ -9,7 +9,7 @@ const Team = () => {
       name: "Nitish Pandey",
       role: "Head of Strategy & Finance",
       description: "Nitish leads our strategic vision, ensuring our solutions are innovative and aligned with market needs. His expertise in enterprise architecture drives our success.",
-      image: "/src/assets/nitish.png",
+      image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"],
       in:"https://www.linkedin.com/in/nitishnitish/",
       mailto: "nitish.pandey@workflowcatalyst.com"
@@ -18,7 +18,7 @@ const Team = () => {
       name: "Siddharth Chaturvedi",
       role: "Head of Business",
       description: "Sid oversees all development cycles, ensuring high-quality code and efficient delivery of our web-based applications.",
-      image: "src/assets/sid.png",
+      image: "images/sid.png",
       specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
       in:"https://www.linkedin.com/in/siddharthchaturvedi/",
       mailto: "siddharth@workflowcatalyst.com"
@@ -27,7 +27,7 @@ const Team = () => {
       name: "Sunil Kunwar",
       role: "Chief Architect & Engineer",
       description: "Sunil works to design tailored, robust solutions based on the size, budget and vision of the client. Be it ETL, workflow, and CRM solutions.",
-      image: "src/assets/sunil.png",
+      image: "images/sunil.png",
       specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
       in:"https://www.linkedin.com/in/kunwarsunilsingh/",
       mailto: "sunil.kunwar@workflowcatalyst.com"
@@ -36,7 +36,7 @@ const Team = () => {
       name: "Brijesh Kannaujia",
       role: "Head of Projects & Quality",
       description: "Brijesh works to deliver high performant solutions to the client and to get a sign off.",
-      image: "src/assets/brijesh.png",
+      image: "images/brijesh.png",
       specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
       in:"https://www.linkedin.com/in/brijesh-kannaujia/",
       mailto: "brijesh.kannaujia@workflowcatalyst.com"
@@ -45,7 +45,7 @@ const Team = () => {
       name: "Rahul Ragtah",
       role: "Design and Marketing Head",
       description: "With over 12 years of experience, Rahul leads UX strategy and product design to deliver seamless, user-centered experiences. He specializes in usability testing and ensures every interface is intuitive, efficient, and aligned with user needs.",
-      image: "src/assets/rahul.png",
+      image: "images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
       in:"https://in.linkedin.com/in/rahulragtah",
       mailto: "rahul.ragtah@workflowcatalyst.com"

@@ -102,8 +102,8 @@ const AboutPage = () => {
                 Empowering SMEs Through Digital Excellence
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                We are a team of seasoned experts dedicated to transforming businesses through 
-                innovative technology solutions and strategic digital transformation initiatives.
+                We are a team of experts with decades of combined experience in technology, business strategy, and digital transformation. 
+                We use innovative mix of frameworks to design solutions and help you launch long term strategic digital transformation initiatives.
               </p>
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
