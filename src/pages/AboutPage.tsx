@@ -10,43 +10,29 @@ import { Link } from "react-router-dom";
 const AboutPage = () => {
   const timeline = [
     {
-      year: "2020",
-      title: "Company Founded",
-      description: "Started with a vision to empower SMEs through digital transformation"
-    },
-    {
-      year: "2021",
-      title: "First Major Milestone",
-      description: "Successfully delivered 10+ enterprise solutions during challenging times"
-    },
-    {
-      year: "2022",
-      title: "Team Expansion",
-      description: "Grew our expert team to cover all major technology domains"
-    },
-    {
       year: "2023",
-      title: "Cloud Specialization",
-      description: "Became certified partners with AWS, Azure, and Google Cloud"
+      title: "Company Founded & First Major Milestone",
+      description: "Started with a vision to empower SMEs through digital transformation and Successfully delivered 5+ enterprise solutions during challenging times"
     },
+
     {
       year: "2024",
-      title: "50+ Projects",
-      description: "Reached milestone of 50+ successful project deliveries"
+      title: "Cloud Specialization & Team Expansion",
+      description: "Became certified partners with AWS, Azure, and Google Cloud and Grew our expert team to cover all major technology domains"
     },
     {
       year: "2025",
-      title: "Innovation Focus",
-      description: "Expanding into AI/ML and advanced automation solutions"
+      title: "Innovation Focus & 40+ Projects delivered",
+      description: "Expanding into AI/ML and advanced automation solutions and Reached milestone of 50+ successful project deliveries"
     }
   ];
 
   const achievements = [
     {
       icon: <Users className="h-8 w-8" />,
-      number: "50+",
-      label: "Happy Clients",
-      description: "Businesses transformed"
+      number: "25+",
+      label: "Years Combined Experience",
+      description: "Trusted Professionals"
     },
     {
       icon: <Award className="h-8 w-8" />,
@@ -140,7 +126,7 @@ const AboutPage = () => {
                 Our Journey
               </Badge>
               <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-                Building Excellence Since 2019
+                Building Excellence Since 2023
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 From humble beginnings to becoming a trusted technology partner for SMEs across multiple industries.

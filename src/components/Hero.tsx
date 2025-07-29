@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -62,26 +63,30 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex justify-center mb-12">
+          <Link to="/contact">
             <Button 
               variant="gradient" 
               size="xl" 
               className="group"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              
             >
+              
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+             
             </Button>
+            </Link>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">50+</div>
+              <div className="text-3xl font-bold text-primary-foreground mb-2">40+</div>
               <div className="text-primary-foreground/80 text-sm">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">5+</div>
-              <div className="text-primary-foreground/80 text-sm">Years Experience</div>
+              <div className="text-3xl font-bold text-primary-foreground mb-2">25+</div>
+              <div className="text-primary-foreground/80 text-sm">Years of Experience</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-foreground mb-2">100%</div>

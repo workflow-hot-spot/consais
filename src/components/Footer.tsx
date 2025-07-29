@@ -58,11 +58,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90">info@workflowcatalyst.com</span>
+                  <span className="text-background/90">support@workflowcatalyst.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90">India</span>
+                  <span className="text-background/90">#11, 13 Floor, Wave One, Sector 18, Noida, UP, India - 201301</span>
                 </div>
               </div>
             </div>

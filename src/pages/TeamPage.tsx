@@ -17,7 +17,7 @@ const TeamPage = () => {
     },
     {
       icon: <Briefcase className="h-6 w-6" />,
-      number: "100+",
+      number: "40+",
       label: "Projects Led",
       description: "Successful deliveries"
     },
