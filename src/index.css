@@ -154,3 +154,7 @@
     background: hsl(var(--muted-foreground));
   }
 }
+
+.focus\:bg-accent:focus {
+  background-color: hsl(var(--primary)) !important;
+}

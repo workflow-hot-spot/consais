@@ -1,7 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Users, Target, Settings, Award, TrendingUp } from "lucide-react";
+import { ArrowRight,CheckCircle, Users, Target, Settings, Award, TrendingUp } from "lucide-react";
 
 const HowWeWorkPage = () => {
   const workflowSteps = [
@@ -42,18 +45,28 @@ const HowWeWorkPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background/95 to-primary/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              How We <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Work</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <section className="pt-24 pb-16 bg-gradient-hero">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
+                Our Approch
+              </Badge>
+              <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
+                How we work
+              </h1>
+              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
               Our proven methodology combines extensive experience, local knowledge, and innovative approaches to deliver exceptional results for your business.
-            </p>
+              </p>
+              <Link to="/contact">
+                <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
+                  Work With Us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+   
 
       {/* Main Content */}
       <section className="py-16">
