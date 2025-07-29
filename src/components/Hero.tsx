@@ -10,15 +10,24 @@ const Hero = () => {
         <img 
           src={heroBg} 
           alt="Tech Background" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-pulse-glow"
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-hero opacity-90 animate-fade-in"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20"></div>
         
         {/* Animated Background Overlays */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-primary/40 to-transparent animate-slide-bg"></div>
           <div className="absolute bottom-0 right-0 w-full h-2 bg-gradient-to-l from-transparent via-accent/40 to-transparent animate-slide-bg" style={{ animationDelay: '10s' }}></div>
+          <div className="absolute top-1/4 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-glow/30 to-transparent animate-slide-bg" style={{ animationDelay: '5s' }}></div>
+          <div className="absolute bottom-1/4 right-0 w-full h-1 bg-gradient-to-l from-transparent via-accent/30 to-transparent animate-slide-bg" style={{ animationDelay: '15s' }}></div>
+        </div>
+        
+        {/* Moving Gradient Mesh */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/30 to-transparent rounded-full animate-drift blur-3xl"></div>
+          <div className="absolute top-1/2 right-0 w-80 h-80 bg-gradient-to-bl from-accent/30 to-transparent rounded-full animate-float blur-3xl" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-gradient-to-tr from-primary-glow/30 to-transparent rounded-full animate-pulse-glow blur-3xl" style={{ animationDelay: '4s' }}></div>
         </div>
       </div>
 
