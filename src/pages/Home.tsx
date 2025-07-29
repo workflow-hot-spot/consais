@@ -43,20 +43,20 @@ const Home = () => {
   const testimonials = [
     {
       quote: "Workflow Catalyst transformed our business operations completely. Their CRM solution increased our sales productivity by 60%.",
-      author: "Sarah Johnson",
-      role: "CEO, TechStart Solutions",
+      author: "R. Narayan",
+      role: "CEO, Power2SME",
       rating: 5
     },
     {
       quote: "Outstanding service and support. They delivered our e-commerce platform ahead of schedule and under budget.",
-      author: "Michael Chen", 
-      role: "Founder, RetailPro",
+      author: "Vijay Saini", 
+      role: "BD, Bizfund",
       rating: 5
     },
     {
       quote: "The team's expertise in cloud migration saved us months of downtime. Highly recommended for any SME.",
-      author: "Priya Sharma",
-      role: "CTO, FinanceFlow",
+      author: "Sanjay Mohan",
+      role: "CTO, MMT",
       rating: 5
     }
   ];

@@ -10,35 +10,45 @@ const Team = () => {
       role: "Head of Strategy & Finance",
       description: "Nitish leads our strategic vision, ensuring our solutions are innovative and aligned with market needs. His expertise in enterprise architecture drives our success.",
       image: "/src/assets/nitish.png",
-      specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"]
+      specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"],
+      in:"https://www.linkedin.com/in/nitishnitish/",
+      mailto: "nitish.pandey@workflowcatalyst.com"
     },
     {
-      name: "Siddarth Chaturvedi",
+      name: "Siddharth Chaturvedi",
       role: "Head of Business",
       description: "Sid oversees all development cycles, ensuring high-quality code and efficient delivery of our web-based applications.",
       image: "src/assets/sid.png",
-      specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"]
+      specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
+      in:"https://www.linkedin.com/in/siddharthchaturvedi/",
+      mailto: "siddharth@workflowcatalyst.com"
     },
     {
       name: "Sunil Kunwar",
       role: "Chief Architect & Engineer",
       description: "Sunil works to design tailored, robust solutions based on the size, budget and vision of the client. Be it ETL, workflow, and CRM solutions.",
       image: "src/assets/sunil.png",
-      specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"]
+      specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
+      in:"https://www.linkedin.com/in/kunwarsunilsingh/",
+      mailto: "sunil.kunwar@workflowcatalyst.com"
     },
     {
       name: "Brijesh Kannaujia",
       role: "Head of Projects & Quality",
       description: "Brijesh works to deliver high performant solutions to the client and to get a sign off.",
       image: "src/assets/brijesh.png",
-      specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"]
+      specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
+      in:"https://www.linkedin.com/in/brijesh-kannaujia/",
+      mailto: "brijesh.kannaujia@workflowcatalyst.com"
     },
     {
       name: "Rahul Ragtah",
       role: "Design and Marketing Head",
-      description: "Rahul works to deliver right user experience. He is also the SEO expert who helps clients to get the right audience.",
+      description: "With over 12 years of experience, Rahul leads UX strategy and product design to deliver seamless, user-centered experiences. He specializes in usability testing and ensures every interface is intuitive, efficient, and aligned with user needs.",
       image: "src/assets/rahul.png",
-      specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"]
+      specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
+      in:"https://in.linkedin.com/in/rahulragtah",
+      mailto: "rahul.ragtah@workflowcatalyst.com"
     }
   ];
 
@@ -99,10 +109,10 @@ const Team = () => {
                 {/* Social Links */}
                 <div className="flex space-x-3">
                   <Button size="sm" variant="outline" className="p-2">
-                    <Linkedin className="h-4 w-4" />
+                    <a href={member.in} target="_blank"><Linkedin className="h-4 w-4" /></a>
                   </Button>
                   <Button size="sm" variant="outline" className="p-2">
-                    <Mail className="h-4 w-4" />
+                    <a href='mailto:{member.mailto}'><Mail className="h-4 w-4" /></a>
                   </Button>
                 </div>
               </CardContent>
