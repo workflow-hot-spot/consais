@@ -79,8 +79,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      details: "info@workflowcatalyst.com",
-      action: "mailto:info@workflowcatalyst.com"
+      details: "support@workflowcatalyst.com",
+      action: "mailto:support@workflowcatalyst.com"
     },
     {
       icon: <MessageSquare className="h-6 w-6" />,

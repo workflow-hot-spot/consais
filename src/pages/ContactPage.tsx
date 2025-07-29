@@ -31,8 +31,8 @@ const ContactPage = () => {
       icon: <Mail className="h-8 w-8" />,
       title: "Email Support",
       description: "Detailed inquiries and documentation",
-      detail: "info@workflowcatalyst.com",
-      action: "mailto:info@workflowcatalyst.com",
+      detail: "support@workflowcatalyst.com",
+      action: "mailto:support@workflowcatalyst.com",
       availability: "24/7 - Response within 4 hours"
     },
     {
@@ -124,7 +124,7 @@ const ContactPage = () => {
           </div>
         </section>
 
-        {/* Contact Methods */}
+        {/* Contact Methods 
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -161,11 +161,11 @@ const ContactPage = () => {
               ))}
             </div>
 
-            {/* Office Information */}
+            
           
           </div>
         </section>
-
+*/}
         {/* Main Contact Component */}
         <div id="contact-form">
           <Contact />

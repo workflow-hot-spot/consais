@@ -21,22 +21,22 @@ const Hero = () => {
       titleHighlight: "Achieve.",
       subtitle: "Driving digital excellence with cutting-edge solutions tailored for your business success.",
       stats: [
-        { value: "40+", label: "Projects Delivered" },
-        { value: "25+", label: "Years of Experience" },
-        { value: "100%", label: "Client Satisfaction" },
-        { value: "24/7", label: "Support" },
-      ]
+         { value: "5⭐", label: " Performance" },
+        { value: "10+", label: "Industries Served" },
+        { value: "4", label: "ML Projects" },
+        { value: "5⭐", label: "Security" },
+       ]
     },
     {
-      badge: "⚡ Transforming Ideas With AI, IoT, Blockchain",
+      badge: "⚡ Transformational Automation",
       title: "Web & Mobile",
       titleHighlight: "Application Development",
-      subtitle: "Specialized app development powered by advanced AI technology, generative frameworks, and modern solutions.",
+      subtitle: "Specialized app development powered by workflow frameworks, advanced AI technology, generative frameworks, and modern solutions.",
       stats: [
+         { value: "5⭐", label: " Performance" },
         { value: "10+", label: "Industries Served" },
-        { value: "20+", label: "AI Projects" },
-        { value: "5⭐", label: "Client Rating" },
-        { value: "24/7", label: "Global Support" },
+        { value: "4", label: "ML Projects" },
+        { value: "5⭐", label: "Security" },
       ]
     }
   ];
