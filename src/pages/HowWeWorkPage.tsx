@@ -71,27 +71,45 @@ const HowWeWorkPage = () => {
             </p>
           </div>
 
-          {/* Workflow Steps */}
+          {/* Workflow Steps - Stepper Format */}
           <div className="mb-16">
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
               Comprehensive Analysis of Our Functioning
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="max-w-4xl mx-auto">
               {workflowSteps.map((step, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20">
-                  <CardContent className="p-6 text-center">
-                    <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      {step.icon}
+                <div key={index} className="relative flex items-start mb-12 last:mb-0">
+                  {/* Step Number and Icon */}
+                  <div className="flex flex-col items-center mr-6 flex-shrink-0">
+                    <div className="relative z-10 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg mb-2 shadow-lg">
+                      {index + 1}
                     </div>
-                    <h4 className="text-xl font-semibold text-foreground mb-3">
-                      {step.title}
-                    </h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {step.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                    <div className="flex justify-center mb-2">
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        {step.icon}
+                      </div>
+                    </div>
+                    {/* Connecting Line */}
+                    {index < workflowSteps.length - 1 && (
+                      <div className="w-0.5 h-20 bg-gradient-to-b from-primary/60 to-primary/20 mt-4"></div>
+                    )}
+                  </div>
+
+                  {/* Step Content */}
+                  <div className="flex-1 pt-2">
+                    <Card className="group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20 bg-gradient-to-r from-background to-background/80">
+                      <CardContent className="p-6">
+                        <h4 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                          {step.title}
+                        </h4>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {step.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
