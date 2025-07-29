@@ -20,7 +20,7 @@ jobs:
     - name: Set up SSH agent
       uses: webfactory/ssh-agent@v0.8.0 # Action to set up SSH agent for secure key handling
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }} # Your SSH private key (stored as a GitHub Secret)
+        ssh-private-key: ${{ secrets.SSH_PRIVATEKEY }} # Your SSH private key (stored as a GitHub Secret)
 
     # --- Frontend Deployment ---
      
