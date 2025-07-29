@@ -30,7 +30,7 @@ jobs:
       run: |
         # Copy the contents of the built frontend (e.g., 'build' folder) to Nginx's static root
         # Adjust 'build' to 'dist' if Vite creates a 'dist' folder
-        scp -r -o StrictHostKeyChecking=no ./frontend/* ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }}:/home/${{ secrets.SSH_USERNAME }}/website/frontend/
+        scp -r -o StrictHostKeyChecking=no ./* ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }}:/home/${{ secrets.SSH_USERNAME }}/website/frontend/
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm install"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm run build"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.VPSIP }} "sudo rm -rf /var/www/html/*"
