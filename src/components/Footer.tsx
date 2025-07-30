@@ -30,6 +30,7 @@ const Footer = () => {
     { label: "Services", href: "/services" },
     { label: "Technologies", href: "/technologies" },
     { label: "Our Team", href: "/team" },
+    { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "#" },
     { label: "Terms of Service", href: "#" }
