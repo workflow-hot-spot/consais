@@ -78,11 +78,11 @@ const ContactPage = () => {
   const faqs = [
     {
       question: "What is your typical project timeline?",
-      answer: "Most projects are completed within 2-8 weeks, depending on complexity and scope. We provide detailed timelines during our initial consultation."
+      answer: "Timeline is a function of the project size and complexity. We provide estimated timelines post scope anlaysis and solution selection. We believe adhering to your budget, end-objective and quality is far more essential than just a precise timeline."
     },
     {
       question: "Do you provide ongoing support after project completion?",
-      answer: "Yes, we offer comprehensive maintenance and support packages with SLA-backed response times to ensure your solutions continue to perform optimally."
+      answer: "A software is like a living document, always evolving and growing with your business. We offer comprehensive maintenance and SLA backed support packages. "
     },
     {
       question: "Can you work with our existing systems?",

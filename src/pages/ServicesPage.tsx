@@ -34,8 +34,8 @@ const ServicesPage = () => {
   const serviceFeatures = [
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "Fast Delivery",
-      description: "Most projects delivered within 2-8 weeks"
+      title: "High Quality Design & Code",
+      description: "Critical To Security, Maintenance and Scalability"
     },
     {
       icon: <DollarSign className="h-6 w-6" />,
