@@ -72,7 +72,7 @@ const Team = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our diverse team of seasoned professionals brings decades of combined experience 
-            in technology, business strategy, and digital transformation.
+            in web technology, workflow system design, and digital transformation.
           </p>
         </div>
 
