@@ -30,7 +30,7 @@ const AboutPage = () => {
   const achievements = [
     {
       icon: <Users className="h-8 w-8" />,
-      number: "25+",
+      number: "99+",
       label: "Years Combined Experience",
       description: "Trusted Professionals"
     },
@@ -145,7 +145,7 @@ const AboutPage = () => {
         <About />
 
         {/* Our Journey */}
-        <section className="py-20 bg-background relative overflow-hidden">
+        {/* <section className="py-20 bg-background relative overflow-hidden">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
               <Badge variant="outline" className="mb-6">
@@ -160,16 +160,16 @@ const AboutPage = () => {
             </div>
 
             <div className="max-w-5xl mx-auto">
-              {/* Modern Grid Layout */}
+              
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {timeline.map((item, index) => (
                   <Card key={item.year} className="group hover:shadow-elegant transition-all duration-500 hover:-translate-y-2 border-border/50 bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-sm relative overflow-hidden">
-                    {/* Background Pattern */}
+                  
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-full -translate-y-12 translate-x-12"></div>
                     
                     <CardContent className="p-8 relative z-10">
-                      {/* Year with Modern Styling */}
+                     
                       <div className="flex items-center justify-between mb-6">
                         <div className="text-6xl font-black text-primary/20 group-hover:text-primary/30 transition-colors duration-300">
                           {item.year.slice(-2)}
@@ -179,7 +179,7 @@ const AboutPage = () => {
                         </div>
                       </div>
                       
-                      {/* Content */}
+                    
                       <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                         {item.title}
                       </h3>
@@ -187,7 +187,7 @@ const AboutPage = () => {
                         {item.description}
                       </p>
                       
-                      {/* Progress Indicator */}
+                     
                       <div className="mt-6 flex items-center space-x-2">
                         <div className="flex-1 h-1 bg-border rounded-full overflow-hidden">
                           <div 
@@ -204,7 +204,7 @@ const AboutPage = () => {
                 ))}
               </div>
               
-              {/* Journey Continues */}
+          
               <div className="text-center mt-16">
                 <div className="inline-flex items-center space-x-3 px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full border border-border/50">
                   <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
@@ -214,7 +214,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Achievements */}
         <section className="py-20 bg-background">

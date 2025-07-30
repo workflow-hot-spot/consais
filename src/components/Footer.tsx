@@ -112,13 +112,13 @@ const Footer = () => {
             </div>
 
             {/* Newsletter & Social */}
-            <div>
+            {/* <div>
               <h3 className="text-xl font-bold mb-6">Stay Connected</h3>
               <p className="text-background/80 mb-6 text-sm">
                 Follow us for the latest updates on technology trends and digital transformation insights.
               </p>
               
-              {/* Social Links */}
+              
               <div className="flex space-x-4 mb-6">
                 <Button
                   variant="outline"
@@ -150,7 +150,7 @@ const Footer = () => {
               >
                 Start Your Project
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
 
