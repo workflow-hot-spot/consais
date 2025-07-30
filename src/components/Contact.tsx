@@ -97,14 +97,14 @@ const Contact = () => {
   ];
 
   const services = [
-    "Platform Solutions",
+    "Bespoke Application Development",
+    "Platform Evolution & Optimization",
     "Digital Transformation",
-    "Custom Web Development",
     "Software Testing",
     "UX/UI Design",
-    "Security & Optimization",
-    "Consulting Services",
-    "Other"
+    "Security & Compliance",
+    "Process & Tech Consulting",
+    
   ];
 
   return (
@@ -117,7 +117,7 @@ const Contact = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss how our expertise can drive your next big success. 
+            Let's discuss how our expertise can accelerate your on. 
             We're here to help you navigate your digital transformation journey.
           </p>
         </div>
