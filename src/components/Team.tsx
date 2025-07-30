@@ -16,7 +16,7 @@ const Team = () => {
     },
     {
       name: "Rupesh Mishra",
-      role: "Director - sales & customer relations",
+      role: "Director Sales & Customer Relations",
       description: "A sales guy at heart, he is a seasoned pro with 20+ years of experience in big mobile & digital start-ups. He entered the online space with JustDial in 1999, and since then he's worked with major Indian startups like Hike, Snapdeal, Times Internet, Rediff, etc. where he built people & processes. He is now building a structure which brings brands closer to their consumers using the power of social platforms, content and smart devices.",
       image: "images/rupesh.png",
       specialties: ["Strategist", "Customer-centric", "Visionary", "Brandchamp"],
@@ -25,7 +25,7 @@ const Team = () => {
     },
     {
       name: "Siddharth Chaturvedi",
-      role: "Head of Business",
+      role: "Head of Solutions & Partnerships",
       description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
       image: "images/sid.png",
       specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
@@ -52,7 +52,7 @@ const Team = () => {
     },
     {
       name: "Rahul Ragtah",
-      role: "Design Head",
+      role: "Design & Marketing Head",
       description: "Experienced UX/UI specialist with 12+ years of experience in designing web and mobile products across finance, travel, healthcare, and enterprise sectors. Having worked with brands like Power2SME , Axis Max Life, Time of India, Kissht, Pnb Metlife , CarDekho he bring expertise in both B2B and B2C product design. With a strong foundation in full-stack development, he bridges the gap between design and technology, collaborating closely with engineering teams to build practical, scalable, and high-impact solutions",
       image: "images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
