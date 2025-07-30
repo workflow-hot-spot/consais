@@ -42,7 +42,7 @@ const Home = () => {
 
   const testimonials = [
     {
-      quote: "I have been involved with software development in e-commerce, data mining, business anlaytics, GIS, supply chain, fintech, imagery processing. In fact since the dot com boom and I've have had the opportunity to work with outsourced teams and as well as captive and outsourced development teams. A key issue that ails the out-sourcing model is lack of sense of ownership.  At workflow catalyst we think differently, all of us have spend a decade and more in product companies. Each one of us says \"What gets built here is a reflection about me, it better be good.\". Every project calls upon our ability to infuse a blend of science and art. A personal calling. Monetary success is a byproduct of our passion for technology and our commitment to our clients.",
+      quote: "I have been involved with software development in e-commerce, data mining, business anlaytics, GIS, supply chain, fintech, imagery processing. In fact been at this craft since the dot com boom. I've have had the opportunity to work with captive and outsourced development teams. A key issue that ails the out-sourcing model is lack of sense of ownership.  At workflow catalyst we think differently, all of us have spent a decade and more in product companies. Each one of us says \"What gets built here is a reflection about me, it better be good.\". Every project calls upon our ability to infuse a blend of science and art. A personal calling. Monetary success is a byproduct of our passion for technology and our commitment to our clients.",
       author: "Nitish Pandey",
       role: "Founder & Head of Strategy",
      
