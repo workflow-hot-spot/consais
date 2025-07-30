@@ -8,9 +8,9 @@ const Team = () => {
     {
       name: "Nitish Pandey",
       role: "Head of Strategy & Finance",
-      description: "Nitish leads our strategic vision, ensuring our solutions are innovative and aligned with market needs. His expertise in enterprise architecture drives our success.",
+      description: "Nitish has nearly 25 years of workex in the software industry. He served 15 years in the Indian Navy from where he brings the flavour of design and process orientation which have only evolved during his stints with e-commerce startups semiprecious.com, gaana.com, snapdeal.com and then as the CTO of the fintech bizfunds.com. A masters in CS from IIT(B), he brings to-gether his experience in diverse contexts to define our strategic vision and serves as a fulcrum to our intent to build quality solutions.  Innovation in software solution design has been his regular companion.",
       image: "/images/nitish.png",
-      specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"],
+      specialties: ["Strategic Planning", "Product Innovation", "Financial Management", "Software Development"],
       in:"https://www.linkedin.com/in/nitishnitish/",
      
     },
@@ -28,7 +28,7 @@ const Team = () => {
       role: "Head of Solutions & Partnerships",
       description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
       image: "images/sid.png",
-      specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
+      specialties: ["Customer Success", "Business Analysis", "Partnership Synergy", "Process Optimization"],
       in:"https://www.linkedin.com/in/siddharthchaturvedi/",
      
     },
