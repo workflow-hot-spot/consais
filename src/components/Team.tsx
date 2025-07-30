@@ -12,7 +12,7 @@ const Team = () => {
       image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"],
       in:"https://www.linkedin.com/in/nitishnitish/",
-      mailto: "nitish.pandey@workflowcatalyst.com"
+   
     },
     {
       name: "Siddharth Chaturvedi",
@@ -21,7 +21,7 @@ const Team = () => {
       image: "images/sid.png",
       specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
       in:"https://www.linkedin.com/in/siddharthchaturvedi/",
-      mailto: "siddharth@workflowcatalyst.com"
+       
     },
     {
       name: "Sunil Kunwar",
@@ -30,7 +30,7 @@ const Team = () => {
       image: "images/sunil.png",
       specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
       in:"https://www.linkedin.com/in/kunwarsunilsingh/",
-      mailto: "sunil.kunwar@workflowcatalyst.com"
+       
     },
     {
       name: "Brijesh Kannaujia",
@@ -39,7 +39,7 @@ const Team = () => {
       image: "images/brijesh.png",
       specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
       in:"https://www.linkedin.com/in/brijesh-kannaujia/",
-      mailto: "brijesh.kannaujia@workflowcatalyst.com"
+     
     },
     {
       name: "Rahul Ragtah",
@@ -48,7 +48,7 @@ const Team = () => {
       image: "images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
       in:"https://in.linkedin.com/in/rahulragtah",
-      mailto: "rahul.ragtah@workflowcatalyst.com"
+       
     }
   ];
 
