@@ -12,43 +12,52 @@ const Team = () => {
       image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Enterprise Architecture", "Financial Management", "Market Analysis"],
       in:"https://www.linkedin.com/in/nitishnitish/",
-      mailto: "nitish.pandey@workflowcatalyst.com"
+     
     },
     {
       name: "Siddharth Chaturvedi",
       role: "Head of Business",
-      description: "Sid oversees all development cycles, ensuring high-quality code and efficient delivery of our web-based applications.",
+      description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
       image: "images/sid.png",
       specialties: ["Business Development", "Project Management", "Client Relations", "Process Optimization"],
       in:"https://www.linkedin.com/in/siddharthchaturvedi/",
-      mailto: "siddharth@workflowcatalyst.com"
+     
     },
     {
       name: "Sunil Kunwar",
       role: "Chief Architect & Engineer",
-      description: "Sunil works to design tailored, robust solutions based on the size, budget and vision of the client. Be it ETL, workflow, and CRM solutions.",
+      description: "Experienced Technology Consultant and Solution Architect with a strong background in database design, corporate action automation, and document management solutions for institutional clients. Played a key role at Calance, Information Mosaic, and Citigroup, delivering critical systems for global clients like UBS and ADIA. At Power2SME, built the entire B2B tech stack and NBFC loan management platform, covering end-to-end processes from lead generation to loan disbursement and multi-cycle utilization. Proven track record of designing and delivering robust, business-critical applications.",
       image: "images/sunil.png",
       specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
       in:"https://www.linkedin.com/in/kunwarsunilsingh/",
-      mailto: "sunil.kunwar@workflowcatalyst.com"
+    
     },
     {
       name: "Brijesh Kannaujia",
       role: "Head of Projects & Quality",
-      description: "Brijesh works to deliver high performant solutions to the client and to get a sign off.",
+      description: "He is a seasoned software testing professional with over 18 years of experience delivering high-quality, robust and scalable solutions across B2B, B2C, product, and service-based companies. Proficient in the latest QA technologies and trends, he has successfully led testing efforts for organizations like Power2SME, MakeMyTrip, Sopra Banking Services, GlobalLogic, and CitiXsys. Known for building QA teams from the ground up, he specializes in setting up tailored Testing Centres of Excellence that align with project and business goals. ",
       image: "images/brijesh.png",
       specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
       in:"https://www.linkedin.com/in/brijesh-kannaujia/",
-      mailto: "brijesh.kannaujia@workflowcatalyst.com"
+     
     },
     {
       name: "Rahul Ragtah",
-      role: "Design and Marketing Head",
-      description: "With over 12 years of experience, Rahul leads UX strategy and product design to deliver seamless, user-centered experiences. He specializes in usability testing and ensures every interface is intuitive, efficient, and aligned with user needs.",
+      role: "Design Head",
+      description: "Experienced UX/UI specialist with 12+ years of experience in designing web and mobile products across finance, travel, healthcare, and enterprise sectors. Having worked with brands like Power2SME , Axis Max Life, Time of India, Kissht, Pnb Metlife , CarDekho he bring expertise in both B2B and B2C product design. With a strong foundation in full-stack development, he bridges the gap between design and technology, collaborating closely with engineering teams to build practical, scalable, and high-impact solutions",
       image: "images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
       in:"https://in.linkedin.com/in/rahulragtah",
-      mailto: "rahul.ragtah@workflowcatalyst.com"
+    
+    },
+    {
+      name: "Rupesh Mishra",
+      role: "Director - sales & customer relations",
+      description: "A sales guy at heart, he is a seasoned pro with 20+ years of experience in big mobile & digital start-ups. He entered the online space with JustDial in 1999, and since then he's worked with major Indian startups like Hike, Snapdeal, Times Internet, Rediff, etc. where he built people & processes. He is now building a structure which brings brands closer to their consumers using the power of social platforms, content and smart devices.",
+      image: "images/rupesh.png",
+      specialties: ["Strategist", "Customer-centric", "Visionary", "Brandchamp"],
+      in:"https://www.linkedin.com/in/mishrarupesh/",
+      
     }
   ];
 

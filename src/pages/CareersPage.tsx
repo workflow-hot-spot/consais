@@ -9,6 +9,7 @@ import { MapPin, Clock, Users, Briefcase, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
+import { Badge } from "@/components/ui/badge";
 
 interface JobOpening {
   id: string;
@@ -138,63 +139,106 @@ const CareersPage = () => {
       coverLetter: ""
     });
   };
+  const culture = [
+    {
+      title: "Continuous Learning",
+      description: "We invest in our team's growth through training, conferences, and certification programs.",
+      icon: "📚"
+    },
+    {
+      title: "Work-Life Balance", 
+      description: "We believe in maintaining a healthy balance between professional excellence and personal well-being.",
+      icon: "⚖️"
+    },
+    {
+      title: "Innovation Time",
+      description: "Team members dedicate time to explore new technologies and contribute to open-source projects.",
+      icon: "💡"
+    },
+    {
+      title: "Collaborative Environment",
+      description: "We foster an inclusive culture where every voice is heard and diverse perspectives are valued.",
+      icon: "🤝"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Join Our <span className="text-primary">Team</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+      <section className="pt-24 pb-16 bg-gradient-hero">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
+                Workflow Catalyst
+              </Badge>
+              <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
+                Join Our Team
+              </h1>
+              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
               Be part of a dynamic team that's transforming how SMEs leverage technology. 
               We're looking for passionate individuals to help us build the future of digital solutions.
-            </p>
+              </p>
+            
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+   
 
       {/* Company Culture Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Work With Us?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We believe in creating an environment where innovation thrives and every team member can grow.
-            </p>
-          </div>
+      <section className="py-20 bg-gradient-section">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <Badge variant="outline" className="mb-4">Our Culture</Badge>
+              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                What Makes Us Different
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                We've built a culture that attracts top talent and fosters innovation, collaboration, and excellence.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Collaborative Environment</h3>
-              <p className="text-muted-foreground">Work with talented professionals in a supportive and inclusive workplace.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Briefcase className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Growth Opportunities</h3>
-              <p className="text-muted-foreground">Continuous learning and career advancement opportunities in cutting-edge technologies.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Work-Life Balance</h3>
-              <p className="text-muted-foreground">Flexible working arrangements and comprehensive benefits package.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {culture.map((item, index) => (
+                <Card key={item.title} className="group hover:shadow-card transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="text-3xl">{item.icon}</div>
+                      <div>
+                        <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+         
+        {/* Leadership Philosophy */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <Badge variant="outline" className="mb-6">Leadership Philosophy</Badge>
+              <h2 className="text-4xl font-bold text-foreground mb-8">
+                Leading by Example, Growing Together
+              </h2>
+              <div className="bg-card/50 border border-border/50 rounded-2xl p-8 backdrop-blur-sm">
+                <blockquote className="text-xl text-muted-foreground italic leading-relaxed mb-6">
+                  "Our success is measured not just by the solutions we deliver, but by the growth and 
+                  satisfaction of our team members. We believe that when our people thrive, our clients 
+                  receive the best possible service and innovation."
+                </blockquote>
+                <div className="text-foreground font-semibold">— Workflow Catalyst Leadership Team</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
       {/* Job Openings Section */}
       <section className="py-16 bg-muted/30">
