@@ -15,6 +15,15 @@ const Team = () => {
      
     },
     {
+      name: "Rupesh Mishra",
+      role: "Director - sales & customer relations",
+      description: "A sales guy at heart, he is a seasoned pro with 20+ years of experience in big mobile & digital start-ups. He entered the online space with JustDial in 1999, and since then he's worked with major Indian startups like Hike, Snapdeal, Times Internet, Rediff, etc. where he built people & processes. He is now building a structure which brings brands closer to their consumers using the power of social platforms, content and smart devices.",
+      image: "images/rupesh.png",
+      specialties: ["Strategist", "Customer-centric", "Visionary", "Brandchamp"],
+      in:"https://www.linkedin.com/in/mishrarupesh/",
+      
+    },
+    {
       name: "Siddharth Chaturvedi",
       role: "Head of Business",
       description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
@@ -49,15 +58,6 @@ const Team = () => {
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
       in:"https://in.linkedin.com/in/rahulragtah",
     
-    },
-    {
-      name: "Rupesh Mishra",
-      role: "Director - sales & customer relations",
-      description: "A sales guy at heart, he is a seasoned pro with 20+ years of experience in big mobile & digital start-ups. He entered the online space with JustDial in 1999, and since then he's worked with major Indian startups like Hike, Snapdeal, Times Internet, Rediff, etc. where he built people & processes. He is now building a structure which brings brands closer to their consumers using the power of social platforms, content and smart devices.",
-      image: "images/rupesh.png",
-      specialties: ["Strategist", "Customer-centric", "Visionary", "Brandchamp"],
-      in:"https://www.linkedin.com/in/mishrarupesh/",
-      
     }
   ];
 
