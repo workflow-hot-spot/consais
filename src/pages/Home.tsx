@@ -44,21 +44,9 @@ const Home = () => {
     {
       quote: "I have been involved with software development in e-commerce, data mining, business anlaytics, GIS, supply chain, fintech, imagery processing domains. In fact been at this craft since the dot com boom. I've have had the opportunity to work with captive and outsourced development teams. A key issue that ails the out-sourcing model is lack of sense of ownership.  At workflow catalyst we think differently, all of us have spent a decade and more in product companies. Each one of us says \"What gets built here is a reflection about me, it better be good.\". Every project calls upon our ability to infuse a blend of science and art. A personal calling. Monetary success is a byproduct of our passion for technology and our commitment to our clients.",
       author: "Nitish Pandey",
-      role: "Founder & Head of Strategy",
+      role: "Head of Strategy & Finance",
      
-    },
-    {
-      quote: "Poor service and support. They delivered our e-commerce platform .",
-      author: "Vijay Sales", 
-      role: "BD, Bizfund",
-      rating: 5
-    },
-    {
-      quote: "The team's expertise in cloud migration saved us months of downtime. Highly recommended for any SME.",
-      author: "Sanjay Mohan",
-      role: "CTO, MMT",
-      rating: 5
-    }
+    } 
   ];
 
   return (
@@ -178,19 +166,15 @@ const Home = () => {
                 What Our Founding Team Says
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                It is just not another coding project for us. There's a journey that has brought us to this point, and we are committed to making a difference in the SME sector.
+                It is just not another coding project for us. It is an opportunity to showcase and refine my skill. There's a journey that has brought us to this point, and we are committed to making a difference to the global SMEs.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <div className="flex mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
+                  
                     <blockquote className="text-muted-foreground mb-4">
                       "{testimonial.quote}"
                     </blockquote>
