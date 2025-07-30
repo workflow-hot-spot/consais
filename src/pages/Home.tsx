@@ -13,17 +13,17 @@ const Home = () => {
       icon: <Zap className="h-6 w-6" />,
       title: "Optimal Solution Design",
       description: "Solutioning that starts with a clear understanding of your business needs and objectives."
+    }, {
+      icon: <Trophy className="h-6 w-6" />,
+      title: "Engineering & Documentation Excellence",
+      description: "An approach that leverages OSS frameworks, tools and espouses industry standards. Ensuring maintainability and business continuity."
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Rigourous Testing",
-      description: "It ain't done till it is tested. Be it for functionality, performance or security."
+      description: "It ain't done till it is tested. Our testing coverage encompasses functionality, performance or security."
     },
-    {
-      icon: <Trophy className="h-6 w-6" />,
-      title: "Engineering & Documentation Excellence",
-      description: "An approach that engenders trust and business continuity."
-    },
+   
     {
       icon: <Star className="h-6 w-6" />,
       title: "Evolution Support",

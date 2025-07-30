@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Award, Calendar, Globe, Target, TrendingUp, Users } from "lucide-react";
+import {    Award, Calendar, Globe, Target, TrendingUp,   } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import { ArrowRight, Briefcase, GraduationCap, MapPin, Users } from "lucide-react";
 const AboutPage = () => {
   const timeline = [
     {
@@ -33,7 +33,7 @@ const AboutPage = () => {
       number: "99+",
       label: "Years Combined Experience",
       description: "Trusted Professionals"
-    },
+    }, 
     {
       icon: <Award className="h-8 w-8" />,
       number: "100+",
@@ -46,14 +46,41 @@ const AboutPage = () => {
       label: "Industries Served",
       description: "Diverse sectors covered"
     },
-    {
+  /*   {
       icon: <TrendingUp className="h-8 w-8" />,
       number: "95%",
       label: "Client Retention",
       description: "Long-term partnerships"
+    } */
+  ];
+  const teamStats = [
+    {
+      icon: <Users className="h-6 w-6" />,
+      number: "90+",
+      label: "Combined Years",
+      description: "Of industry experience"
+    },
+    {
+      icon: <Briefcase className="h-6 w-6" />,
+      number: "40+",
+      label: "Projects Led",
+      description: "Successful deliveries"
+    },
+    {
+      icon: <GraduationCap className="h-6 w-6" />,
+      number: "15+",
+      label: "Certifications",
+      description: "Professional credentials"
+    },
+    {
+      icon: <MapPin className="h-6 w-6" />,
+      number: "5+",
+      label: "Countries",
+      description: "International experience"
     }
   ];
 
+ 
   const values = [
     {
       title: "Innovation",
@@ -106,22 +133,17 @@ const AboutPage = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
        
         <div className="md:w-1/1 text-center md:text-left">
-        {/*}  <!---<p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                We are a team of experts with decades of combined experience in technology, business strategy, and digital transformation. 
-                We use innovative mix of frameworks to design solutions and help you launch long term strategic digital transformation initiatives.
-              </p>
-              --->
-           */}
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Workflow + Catalyst:</h3>
+    
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Workflow + Catalyst = Business Acceleration!</h3>
               
             <p className="text-gray-700 leading-relaxed mb-4">
-                Our name embodies our core purpose. <i>'Workflow'</i> signifies the precise, optimized sequence of tasks that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. <i>'Catalyst'</i> represents our role as the transformative agent – we don't just observe; we accelerate, initiate, and enable profound positive change. Together, **Workflow Catalyst** ensures your business achieves more than the sum of its individual parts, driving synergistic growth through intelligent design and execution.
+                Our name embodies our core purpose. <i>'Workflow'</i> signifies the precise, optimized sequence of tasks that define efficient operations for , from data integration (ETL) to customer relationship management (CRM) and beyond. <i>'Catalyst'</i> represents our role as the transformative agent – we don't just observe; we accelerate, initiate, and enable profound positive change. Together, <i><b>Workflow Catalyst</b></i> ensures your business achieves more than the sum of its individual parts, driving synergistic growth through intelligent design and execution.
             </p>
 
 
             <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Our Vision</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-                To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in trading and finance, pioneering intelligent, intuitive, and secure web-based solutions that unlock unprecedented operational efficiency and foster sustainable growth in a rapidly digitizing world.
+                To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in supply chain, tele-marketing, NBFCs, manufacturing, trading and finance, delivering intelligent, intuitive, and secure web-based solutions that unlock huge operational efficiency and foster sustainable growth in a rapidly digitizing world.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Our Mission</h3>
@@ -220,7 +242,7 @@ const AboutPage = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Our Achievements</Badge>
+              <Badge variant="outline" className="mb-4">Our Team</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Numbers That Tell Our Story
               </h2>
@@ -230,7 +252,7 @@ const AboutPage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {achievements.map((achievement, index) => (
+              {teamStats.map((achievement, index) => (
                 <Card key={achievement.label} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm text-center">
                   <CardContent className="p-8">
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
