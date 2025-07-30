@@ -11,23 +11,23 @@ const Home = () => {
   const features = [
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Rapid Deployment",
-      description: "Get your solutions up and running quickly with our streamlined processes"
+      title: "Optimal Solution Design",
+      description: "Solutioning that starts with a clear understanding of your business needs and objectives."
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Expert Team",
-      description: "Seasoned professionals with years of experience in enterprise solutions"
+      title: "Rigourous Testing",
+      description: "It ain't done till it is tested. Be it for functionality, performance or security."
     },
     {
       icon: <Trophy className="h-6 w-6" />,
-      title: "Proven Results",
-      description: "Track record of successful digital transformations across industries"
+      title: "Engineering & Documentation Excellence",
+      description: "An approach that engenders trust and business continuity."
     },
     {
       icon: <Star className="h-6 w-6" />,
-      title: "24/7 Support",
-      description: "Round-the-clock technical support to keep your business running"
+      title: "Evolution Support",
+      description: "Operational and engineering  support to keep your business running"
     }
   ];
 
