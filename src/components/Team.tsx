@@ -8,7 +8,7 @@ const Team = () => {
     {
       name: "Nitish Pandey",
       role: "Head of Strategy & Finance",
-      description: "Nitish has nearly 25 years of workex in the software industry. He served 15 years in the Indian Navy from where he brings the flavour of design and process orientation which have only evolved during his stints with e-commerce startups semiprecious.com, gaana.com, snapdeal.com and then as the CTO of the fintech bizfunds.com. A masters in CS from IIT(B), he brings to-gether his experience in diverse contexts to define our strategic vision and serves as a fulcrum to our intent to build quality solutions.  Innovation in software solution design has been his regular companion.",
+      description: "Nitish is a PG in CS from IIT(B) and has 25 years of workex in the software industry. He served 15 years in the Indian Navy from where he brings design & process orientation which have only evolved during his stints at e-commerce startups Semiprecious.com, Gaana.com, Snapdeal.com and then as the CTO of the fintech Bizfunds.com. He defines our strategy and serves as a fulcrum for our resolve to build quality solutions. Innovation in solution design is his forte.",
       image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Product Innovation", "Financial Management", "Software Development"],
       in:"https://www.linkedin.com/in/nitishnitish/",
