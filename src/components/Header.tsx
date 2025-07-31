@@ -44,7 +44,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Workflow Catalyst" className="h-8 w-8" />
-            <span className="text-xl font-bold text-primary">Workflow Catalyst</span>
+            <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Workflow Catalyst</span>
           </Link>
 
           {/* Desktop Navigation */}
