@@ -15,6 +15,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<any>(null);
@@ -146,23 +147,14 @@ const Services = () => {
                       <span className="text-muted-foreground">{service.split(' - ')[0]}</span>
                     </li>
                   ))}
+                
+                  <Dialog>
+                  <DialogTrigger asChild>
                   {category.services.length > 4 && (
-                    <li className="text-sm text-primary font-medium">
-                      +{category.services.length - 4} more services
+                    <li className="text-sm text-primary font-medium" onClick={() => setSelectedService(category)}>
+                      <a className="service-link">+{category.services.length - 4} more services</a>
                     </li>
                   )}
-                </ul>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                      onClick={() => setSelectedService(category)}
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
@@ -206,14 +198,20 @@ const Services = () => {
                         <p className="text-muted-foreground text-sm mb-3">
                           Contact us to discuss how these services can transform your business.
                         </p>
+                        <Link to="/contact">
                         <Button variant="hero" size="sm" className="w-full">
+                        
                           Contact Us
                           <ArrowRight className="ml-2 h-4 w-4" />
+                      
                         </Button>
+                        </Link>
                       </div>
                     </div>
                   </DialogContent>
                 </Dialog>
+                </ul>
+                
               </CardContent>
             </Card>
           ))}

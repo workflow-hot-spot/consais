@@ -65,7 +65,7 @@ const Team = () => {
     <section id="team" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Meet Our Team</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             The Experts Behind Your Success
@@ -74,7 +74,7 @@ const Team = () => {
             Our diverse team of seasoned professionals brings decades of combined experience 
             in web technology, workflow system design, and digital transformation.
           </p>
-        </div>
+        </div> */}
 
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

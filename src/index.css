@@ -158,3 +158,5 @@
 .focus\:bg-accent:focus {
   background-color: hsl(var(--primary)) !important;
 }
+
+.service-link{cursor: pointer;}
