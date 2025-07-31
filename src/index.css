@@ -162,3 +162,9 @@
 }
 
 .service-link{cursor: pointer;}
+.bg-gradient-logo{ 
+  background:  linear-gradient(135deg, #2492C7, #0FA095);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+ }
