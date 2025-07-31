@@ -1,9 +1,11 @@
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { 
   Phone, 
@@ -18,6 +20,8 @@ import {
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,39 +31,53 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Construct WhatsApp message
-    const whatsappMessage = encodeURIComponent(
-      `Hi Workflow Catalyst Team!\n\n` +
-      `I'm interested in your IT services.\n\n` +
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Company: ${formData.company}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Service Interest: ${formData.service}\n` +
-      `Message: ${formData.message}\n\n` +
-      `Please get in touch with me. Thank you!`
-    );
-    
-    // Open WhatsApp
-    window.open(`https://wa.me/919910815132?text=${whatsappMessage}`, '_blank');
-    
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      service: "",
-      message: ""
-    });
+    try {
+      // EmailJS configuration
+      const serviceId = 'service_workflow'; // Replace with your EmailJS service ID
+      const templateId = 'template_contact'; // Replace with your EmailJS template ID
+      const publicKey = 'your-public-key'; // Replace with your EmailJS public key
+      
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        to_email: 'support@workflowcatalyst.com'
+      };
+      
+      // Send email via EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      // Show thank you modal
+      setShowThankYou(true);
+      
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        service: "",
+        message: ""
+      });
+      
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact us directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -294,8 +312,9 @@ const Contact = () => {
                     variant="hero" 
                     size="lg" 
                     className="w-full group"
+                    disabled={isSubmitting}
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                     <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
 
@@ -309,6 +328,36 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Thank You Modal */}
+      <Dialog open={showThankYou} onOpenChange={setShowThankYou}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl font-bold text-foreground">
+              Thank You! 🎉
+            </DialogTitle>
+          </DialogHeader>
+          <div className="text-center space-y-4 p-6">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p className="text-lg text-muted-foreground">
+              We've received your query and will reach out to you shortly.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Our team typically responds within 24 hours during business days.
+            </p>
+            <Button 
+              onClick={() => setShowThankYou(false)}
+              className="w-full mt-6"
+            >
+              Close
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
