@@ -110,16 +110,7 @@ const Services = () => {
     <section id="services" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">Our Services</Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Comprehensive IT Solutions
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From cloud infrastructure to custom development, we provide end-to-end technology solutions
-            that drive business growth and digital transformation.
-          </p>
-        </div>
+  
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
