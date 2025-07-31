@@ -50,16 +50,7 @@ const About = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">About Workflow Catalyst</Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Empowering SMEs Through Digital Excellence
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            At Workflow Catalyst, we are a team of seasoned experts dedicated to empowering 
-            Small and Medium-sized Enterprises (SMEs) in the trading and finance space.
-          </p>
-        </div>
+       
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Content */}

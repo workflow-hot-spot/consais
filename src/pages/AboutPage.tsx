@@ -143,113 +143,8 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Main About Component */}
-        <About />
-
-        {/* Our Journey */}
-        {/* <section className="py-20 bg-background relative overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <Badge variant="outline" className="mb-6">
-                Our Journey
-              </Badge>
-              <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-                Building Excellence Since 2023
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                From humble beginnings to becoming a trusted technology partner for SMEs across multiple industries.
-              </p>
-            </div>
-
-            <div className="max-w-5xl mx-auto">
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {timeline.map((item, index) => (
-                  <Card key={item.year} className="group hover:shadow-elegant transition-all duration-500 hover:-translate-y-2 border-border/50 bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-sm relative overflow-hidden">
-                  
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-full -translate-y-12 translate-x-12"></div>
-                    
-                    <CardContent className="p-8 relative z-10">
-                     
-                      <div className="flex items-center justify-between mb-6">
-                        <div className="text-6xl font-black text-primary/20 group-hover:text-primary/30 transition-colors duration-300">
-                          {item.year.slice(-2)}
-                        </div>
-                        <div className="text-lg font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
-                          {item.year}
-                        </div>
-                      </div>
-                      
-                    
-                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                        {item.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {item.description}
-                      </p>
-                      
-                     
-                      <div className="mt-6 flex items-center space-x-2">
-                        <div className="flex-1 h-1 bg-border rounded-full overflow-hidden">
-                          <div 
-                            className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 group-hover:w-full" 
-                            style={{ width: `${((index + 1) / timeline.length) * 100}%` }}
-                          ></div>
-                        </div>
-                        <span className="text-xs text-muted-foreground font-medium">
-                          {index + 1}/{timeline.length}
-                        </span>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-              
-          
-              <div className="text-center mt-16">
-                <div className="inline-flex items-center space-x-3 px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full border border-border/50">
-                  <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
-                  <span className="text-foreground font-medium">Journey Continues...</span>
-                  <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full animate-pulse"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* Achievements */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Our Team</Badge>
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Numbers That Tell Our Story
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                These metrics reflect our commitment to delivering exceptional results and building lasting partnerships.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamStats.map((achievement, index) => (
-                <Card key={achievement.label} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm text-center">
-                  <CardContent className="p-8">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      {achievement.icon}
-                    </div>
-                    <div className="text-4xl font-bold text-foreground mb-2">{achievement.number}</div>
-                    <div className="text-lg font-semibold text-foreground mb-1">{achievement.label}</div>
-                    <div className="text-muted-foreground text-sm">{achievement.description}</div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Company Philosophy */}
-        <section className="py-20 bg-background">
+            {/* Company Philosophy */}
+            <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4">Company Philosophy</Badge>
@@ -303,6 +198,42 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Main About Component */}
+        <About />
+
+       
+        {/* Achievements */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <Badge variant="outline" className="mb-4">Our Team</Badge>
+              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                Numbers That Tell Our Story
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                These metrics reflect our commitment to delivering exceptional results and building lasting partnerships.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamStats.map((achievement, index) => (
+                <Card key={achievement.label} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm text-center">
+                  <CardContent className="p-8">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      {achievement.icon}
+                    </div>
+                    <div className="text-4xl font-bold text-foreground mb-2">{achievement.number}</div>
+                    <div className="text-lg font-semibold text-foreground mb-1">{achievement.label}</div>
+                    <div className="text-muted-foreground text-sm">{achievement.description}</div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+    
 
         {/* Our Values */}
         <section className="py-20 bg-gradient-section">
