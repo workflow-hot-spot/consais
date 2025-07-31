@@ -52,20 +52,6 @@ const Footer = () => {
                 Empowering SMEs through digital transformation with cutting-edge 
                 technology solutions and expert consulting services.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90">+91 9910815132</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90">support@workflowcatalyst.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90">#11, 13 Floor, Wave One, Sector 18, Noida, UP, India - 201301</span>
-                </div>
-              </div>
             </div>
 
             {/* Services */}
@@ -109,6 +95,25 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Contact Details */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Contact Us</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90 text-sm">+91 9910815132</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90 text-sm">support@workflowcatalyst.com</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-primary-glow mt-0.5 flex-shrink-0" />
+                  <span className="text-background/90 text-sm">#11, 13 Floor, Wave One, Sector 18, Noida, UP, India - 201301</span>
+                </div>
+              </div>
             </div>
 
             {/* Newsletter & Social */}

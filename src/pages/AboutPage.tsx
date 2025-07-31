@@ -144,53 +144,71 @@ const AboutPage = () => {
         </section>
 
             {/* Company Philosophy */}
-            <section className="py-20 bg-background">
+            <section className="py-20 bg-gradient-section">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Company Philosophy</Badge>
+              <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/20">Company Philosophy</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Our Foundation & Purpose
               </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Understanding our name, vision, and mission that drives everything we do
+              </p>
             </div>
 
-            <div className="max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
-                <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
-                  <CardContent className="p-8">
-                    <div className="space-y-8">
-                      <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">
-                          <span className="text-primary">Workflow</span> + <span className="text-accent">Catalyst</span> = Business Acceleration!
-                        </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          Our name embodies our core purpose. <em>'Workflow'</em> signifies the precise, optimized sequence of tasks 
-                          that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. 
-                          <em>'Catalyst'</em> represents our role as the transformative agent – we don't just observe; we accelerate, 
-                          initiate, and enable profound positive change. Together, <strong>Workflow Catalyst</strong> ensures your 
-                          business achieves more than the sum of its individual parts, driving synergistic growth through intelligent 
-                          design and execution.
-                        </p>
-                      </div>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Workflow + Catalyst Card */}
+                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-3">
+                  <CardContent className="p-8 lg:p-10">
+                    <div className="text-center">
+                      <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
+                        <span className="text-primary">Workflow</span> + <span className="text-accent">Catalyst</span> = <span className="bg-gradient-primary bg-clip-text text-transparent">Business Acceleration!</span>
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed text-lg max-w-4xl mx-auto">
+                        Our name embodies our core purpose. <em>'Workflow'</em> signifies the precise, optimized sequence of tasks 
+                        that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. 
+                        <em>'Catalyst'</em> represents our role as the transformative agent – we don't just observe; we accelerate, 
+                        initiate, and enable profound positive change. Together, <strong>Workflow Catalyst</strong> ensures your 
+                        business achieves more than the sum of its individual parts, driving synergistic growth through intelligent 
+                        design and execution.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
 
-                      <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in supply chain, 
-                          tele-marketing, NBFCs, manufacturing, trading and finance, delivering intelligent, intuitive, 
-                          and secure web-based solutions that unlock huge operational efficiency and foster sustainable 
-                          growth in a rapidly digitizing world.
-                        </p>
+                {/* Vision Card */}
+                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-1">
+                  <CardContent className="p-8 h-full">
+                    <div className="flex flex-col h-full">
+                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 mx-auto">
+                        <Target className="h-8 w-8" />
                       </div>
+                      <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Our Vision</h3>
+                      <p className="text-muted-foreground leading-relaxed flex-grow">
+                        To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in supply chain, 
+                        tele-marketing, NBFCs, manufacturing, trading and finance, delivering intelligent, intuitive, 
+                        and secure web-based solutions that unlock huge operational efficiency and foster sustainable 
+                        growth in a rapidly digitizing world.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
 
-                      <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          To empower corporate teams by designing and implementing super robust, intuitive, and secure 
-                          workflows and applications. We transform complex data into actionable insights, enabling 
-                          information-rich environments that drive efficiency, reduce friction, and accelerate your 
-                          digitalization journey.
-                        </p>
+                {/* Mission Card */}
+                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-2">
+                  <CardContent className="p-8 h-full">
+                    <div className="flex flex-col h-full">
+                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/10 text-accent mb-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300 mx-auto">
+                        <Award className="h-8 w-8" />
                       </div>
+                      <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Our Mission</h3>
+                      <p className="text-muted-foreground leading-relaxed flex-grow">
+                        To empower corporate teams by designing and implementing super robust, intuitive, and secure 
+                        workflows and applications. We transform complex data into actionable insights, enabling 
+                        information-rich environments that drive efficiency, reduce friction, and accelerate your 
+                        digitalization journey.
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
