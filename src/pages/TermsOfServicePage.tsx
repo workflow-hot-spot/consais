@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 
 const TermsOfServicePage = () => {
+  const monthName = new Date().toLocaleString('default', { month: 'long' });
+  const currentYear = new Date().getFullYear();
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -21,7 +23,7 @@ const TermsOfServicePage = () => {
                 framework for our business relationship.
               </p>
               <div className="mt-6 text-sm text-muted-foreground">
-                Last updated: January 2025
+                Last updated: {monthName} {currentYear}
               </div>
             </div>
           </div>

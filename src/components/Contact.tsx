@@ -37,9 +37,9 @@ const Contact = () => {
     
     try {
       // EmailJS configuration
-      const serviceId = 'service_workflow'; // Replace with your EmailJS service ID
-      const templateId = 'template_contact'; // Replace with your EmailJS template ID
-      const publicKey = 'your-public-key'; // Replace with your EmailJS public key
+      const serviceId = 'service_bwkgclx'; 
+      const templateId = 'template_zvup4n4'; 
+      const publicKey = 'q7c2H8K4fNVaKG7BH';
       
       // Prepare template parameters
       const templateParams = {
