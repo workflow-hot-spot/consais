@@ -101,11 +101,11 @@ const Header = () => {
                 <span>+91 9910815132</span>
               </div>
             </div>
-            <Link to="/contact">
+            {/* <Link to="/contact">
               <Button variant="hero" size="sm">
                 Get Started
               </Button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -156,13 +156,13 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-4 pt-4 border-t border-border">
+              {/* <div className="px-4 pt-4 border-t border-border">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="hero" size="sm" className="w-full">
                     Get Started
                   </Button>
                 </Link>
-              </div>
+              </div> */}
             </nav>
           </div>
         )}
