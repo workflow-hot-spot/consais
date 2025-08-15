@@ -188,7 +188,10 @@ Vitest is another alternative for the front end for react based applications run
 Pytest is a well known option for any python based web & crud applications. It is perhaps the only option for Fastapi.
 
 We are going to talk about Pytest! 
-\`\`\`   \`\`\` Installation
+\`\`\`
+ 
+\`\`\` 
+**Installation**
 > Add the following to your requirements.txt (or requirements.in in case you are using pip-compile)
 
 1. httpx
@@ -199,12 +202,16 @@ We are going to talk about Pytest!
 6. pytest-timeout
 7. pytest-asyncio
 
-I am assuming these dependencies/plugis will get installed 
-python-dotenv
-python-multipart
-httpx-ws
+I am assuming these dependencies/plugins will get installed 
 
-\`\`\`   \`\`\` Tests Folder Location
+- python-dotenv
+- python-multipart
+- httpx-ws
+
+\`\`\`   
+ 
+\`\`\` 
+**Tests Folder Location**
 >
 Your tests can be anywhere and pytest will look everywhere unless if you tell it to look in a specific place.
 There is a default format for file, function and clas naming but you can always specify your own.
