@@ -18,8 +18,11 @@ const Header = () => {
     { label: "Services", href: "/services" },
     { label: "Technologies", href: "/technologies" },
     { label: "Team", href: "/team" },
+    { label: "Blog", href: "/blog" },
+    
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
+
   ];
 
   const aboutItems = [

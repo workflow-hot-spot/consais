@@ -16,7 +16,12 @@ import CareersPage from "./pages/CareersPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
 import NotFound from "./pages/NotFound";
+ 
+import BlogPage from "./pages/BlogPage";
+ 
 
+
+ 
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -32,6 +37,7 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/how-we-work" element={<HowWeWorkPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/technologies" element={<TechnologiesPage />} />
