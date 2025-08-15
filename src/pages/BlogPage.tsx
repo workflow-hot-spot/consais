@@ -16,7 +16,7 @@ const blogPosts = [
   id: 1,
   title: "Developer Assistant",
   author: "Nitish",
-  date: "2025-06-15",
+  date: "2025-06-25",
   // Add more posts here as needed  
   content: `
  
@@ -169,7 +169,7 @@ The above command launches the module debugpy and listens on port 5678 (the port
   id: 2,
   title: "Your Next Developer Assistant",
   author: "Nitish",
-  date: "2025-05-15",
+  date: "2025-05-11",
   // Add more posts here as needed  
   content: `
 No it is not Cursor! It is the humble TDD partner Pytest
