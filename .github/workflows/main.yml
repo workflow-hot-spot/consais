@@ -1,4 +1,4 @@
-name: Deploy Lovable App to VPS
+name: Deploy WFC to Hostinger VPS
 
 on:
   push:
