@@ -54,11 +54,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 shadow-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Consais" className="h-12 w-12 object-contain" />
-            <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
+            <img src={logo} alt="Consais" className="h-24 w-24 object-contain" />
+            <span className="text-2xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

@@ -45,8 +45,8 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link to="/" className="flex items-center space-x-3 mb-6">
-            <img src={logo} alt="Consais" className="h-12 w-12 object-contain" />
-                <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
+            <img src={logo} alt="Consais" className="h-24 w-24 object-contain" />
+                <span className="text-2xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
               </Link>
               <p className="text-background/80 mb-6 leading-relaxed">
                 Empowering SMEs using AI enabled digital solutions with cutting-edge 

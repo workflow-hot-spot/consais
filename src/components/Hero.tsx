@@ -29,7 +29,7 @@ const Hero = () => {
     // },
     {
       badge: "⚡ Transformational Intelligence",
-      title: "Enterprise Wide Integration",
+      title: "Enterprise Wide",
       titleHighlight: "AI Driven ERP/CRM/LMS",
       subtitle: "Specialized app development powered by workflow frameworks, advanced AI technology, generative frameworks, and modern solutions.",
       stats: [
