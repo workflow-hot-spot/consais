@@ -163,15 +163,17 @@ const AboutPage = () => {
                   <CardContent className="p-8 lg:p-10">
                     <div className="text-center">
                       <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                        <span className="text-primary">Workflow</span> + <span className="text-accent">Catalyst</span> = <span className="bg-gradient-primary bg-clip-text text-transparent">Business Acceleration!</span>
+                        <span className="text-primary">Workflow</span> + <span className="text-accent">AI</span> = <span className="bg-gradient-primary bg-clip-text text-transparent">Business Acceleration!</span>
                       </h3>
                       <p className="text-muted-foreground leading-relaxed text-lg max-w-4xl mx-auto">
-                        Our name embodies our core purpose. <em>'Workflow'</em> signifies the precise, optimized sequence of tasks 
-                        that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. 
-                        <em>'Catalyst'</em> represents our role as the transformative agent – we don't just observe; we accelerate, 
-                        initiate, and enable profound positive change. Together, <strong>Consais</strong> ensures your 
+                        Our name embodies our core purpose. <em>'Consais'</em> inspired by "Concise" stands for "Concise AI Solutions". Concise signifies the precise, optimized solution for your sequence of tasks 
+                        that define efficient operations. We offer AI enablement for data integration (ETL), Loan Origination Systems (LOS), Legacy Marketing Platforms and customer relationship management (CRM) and beyond. 
+                      Not only softwar, we help you at your factory floor and workshops. We can integrate IoT (using rasberry pi) and computer vision (YOLO and SAM) to bring real-time intelligence and smart automation to physical operations. 
+                        We listen, we observe; we accelerate. Together, <strong>Consais</strong> ensures your 
                         business achieves more than the sum of its individual parts, driving synergistic growth through intelligent 
                         design and execution.
+
+
                       </p>
                     </div>
                   </CardContent>

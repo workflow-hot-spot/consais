@@ -13,6 +13,57 @@ import ReactMarkdown from "react-markdown";
 const blogPosts = [
   
     {
+  id: 4,
+  title: "SAM vs YOLO: Understanding Computer Vision Models",
+  author: "Nitish",
+  date: "2026-05-28",
+  content: `
+# **SAM vs YOLO Computer Vision Models**
+
+SAM (Segment Anything Model) and YOLO (You Only Look Once) are both groundbreaking computer vision models, but they were built to solve fundamentally different problems. While recent versions of YOLO have started overlapping with SAM's capabilities, their core philosophies, architectures, and ideal use cases remain distinct.
+
+\`\`\`
+   
+\`\`\`
+
+\`\`\`   \`\`\` _Primary Task & Output_
+
+*   **YOLO:** Primarily an **Object Detection** model. Its main goal is to draw a bounding box around recognized objects and classify what they are (e.g., "Car", "Person", "Defective Part").
+*   **SAM:** A **Promptable Segmentation** model. Its main goal is to cut out the exact pixel-level shape (a mask) of an object. It doesn't inherently know *what* the object is (it doesn't classify); it just knows how to perfectly separate an object from its background based on a prompt (like a click, a box, or text).
+
+\`\`\`
+   
+\`\`\`
+
+\`\`\`   \`\`\` _Speed and Performance_
+
+*   **YOLO:** Designed for **Real-Time** performance. It is incredibly fast and lightweight, making it the industry standard for live video feeds, edge devices, IoT cameras, and factory floor monitoring.
+*   **SAM:** A massive **Foundation Model** (built on Vision Transformers). It is computationally heavy and relatively slow. While smaller variants (like MobileSAM or FastSAM) exist, standard SAM is generally not meant for high-FPS real-time video processing without heavy cloud GPU compute.
+
+\`\`\`
+   
+\`\`\`
+
+\`\`\`   \`\`\` _Training and Flexibility_
+
+*   **YOLO:** Requires **Supervised Fine-Tuning**. To detect a specific object (e.g., a specific type of screw on an assembly line), you need to collect hundreds or thousands of images, manually label them with bounding boxes, and train the YOLO model to recognize them.
+*   **SAM:** **Zero-Shot Capable**. Because it was trained on 11 million images and 1 billion masks, SAM can segment almost any object right out of the box without any extra training. You just point at an object, and SAM outlines it. 
+
+\`\`\`
+   
+\`\`\`
+
+\`\`\`   \`\`\` _The Ultimate Synergy: YOLO + SAM_
+
+In modern computer vision pipelines, engineers often **combine both models**. 
+
+Because SAM needs a "prompt" to know what to segment, and YOLO is incredibly fast at finding where things are, a common architecture is:
+1. **YOLO** scans the image in real-time and detects an object, drawing a bounding box around it.
+2. The coordinates of that bounding box are automatically passed as a "prompt" to **SAM**.
+3. **SAM** then generates a perfect, pixel-accurate mask of the object inside that box. 
+  `
+    },
+    {
   id: 1,
   title: "Developer Assistant",
   author: "Nitish",
@@ -898,7 +949,7 @@ Additionally, I have always admired software designs, development tools and prac
 Another feature in the infancy (and neglected) is the reporting of stats such as events count, messages type triggered, per event type and so on. A streamlit app on snowflake could be a quick makeover there.
 Ability to send attachments or links (with a defined TTL) with the notifications.
 Let us know
-Interesting stuff, no? Any product out there that you use for achieving this goal? Do let us no @ support@workflowcatalyst.com
+Interesting stuff, no? Any product out there that you use for achieving this goal? Do let us no @ support@consais.com
   
   `// Add more posts here as needed  
   }
