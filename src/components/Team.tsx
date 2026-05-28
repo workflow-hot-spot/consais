@@ -7,7 +7,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Nitish Pandey",
-      role: "Head of Strategy & Finance",
+      role: "Founder and Sales Head",
       description: "Nitish is a PG in CS from IIT(B) and has 25 years of workex in the software industry. He served 15 years in the Indian Navy from where he brings design & process orientation which have only evolved during his stints at e-commerce startups Semiprecious.com, Gaana.com, Snapdeal.com and then as the CTO of the fintech Bizfunds.com. He defines our strategy and serves as a fulcrum for our resolve to build quality solutions. Innovation in solution design is his forte.",
       image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Product Innovation", "Financial Management", "Software Development"],
@@ -15,12 +15,12 @@ const Team = () => {
      
     },
     {
-      name: "Rupesh Mishra",
-      role: "Director Sales & Customer Relations",
-      description: "A sales guy at heart, he is a seasoned pro with 20+ years of experience in big mobile & digital start-ups. He entered the online space with JustDial in 1999, and since then he's worked with major Indian startups like Hike, Snapdeal, Times Internet, Rediff, etc. where he built people & processes. He is now building a structure which brings brands closer to their consumers using the power of social platforms, content and smart devices.",
-      image: "images/rupesh.png",
-      specialties: ["Strategist", "Customer-centric", "Visionary", "Brandchamp"],
-      in:"https://www.linkedin.com/in/mishrarupesh/",
+      name: "Nishant Pandey",
+      role: "Head of Business Development",
+      description: "Nishant brings extensive experience in Product Management & Analytics. He has worked across major brands like Naukri, Jeevansathi, and Shiksha at Info Edge, and previously at Schlumberger. An alumnus of IIT Delhi and ISB Hyderabad, he excels in data-driven product strategies and growth.",
+      image: "/images/nishant.jpeg",
+      specialties: ["Product Management", "Analytics", "Data-Driven Strategy", "Growth"],
+      in:"https://www.linkedin.com/in/nishant-pandey/",
       
     },
     {
@@ -34,7 +34,7 @@ const Team = () => {
     },
     {
       name: "Sunil Kunwar",
-      role: "Chief Architect & Engineer",
+      role: "VP of Engineering",
       description: "Experienced Technology Consultant and Solution Architect with a strong background in database design, corporate action automation, and document management solutions for institutional clients. Played a key role at Calance, Information Mosaic, and Citigroup, delivering critical systems for global clients like UBS and ADIA. At Power2SME, built the entire B2B tech stack and NBFC loan management platform, covering end-to-end processes from lead generation to loan disbursement and multi-cycle utilization. Proven track record of designing and delivering robust, business-critical applications.",
       image: "images/sunil.png",
       specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
