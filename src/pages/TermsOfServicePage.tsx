@@ -165,7 +165,7 @@ const TermsOfServicePage = () => {
                     <p className="text-muted-foreground">Email: legal@workflowcatalyst.com</p>
                     <p className="text-muted-foreground">Phone: +91 9910815132</p>
                     <p className="text-muted-foreground">
-                      Address: #11, 13 Floor, Wave One, Sector 18, Noida, UP, India - 201301
+                      Address: PTF 1E 302, Palm Drive, Gurgaon - 122108
                     </p>
                   </div>
                 </div>
