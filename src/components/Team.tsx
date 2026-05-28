@@ -16,8 +16,8 @@ const Team = () => {
     },
     {
       name: "Nishant Pandey",
-      role: "Head of Business Development",
-      description: "Nishant brings extensive experience in Product Management & Analytics. He has worked across major brands like Naukri, Jeevansathi, and Shiksha at Info Edge, and previously at Schlumberger. An alumnus of IIT Delhi and ISB Hyderabad, he excels in data-driven product strategies and growth.",
+      role: "SVP Business Development",
+      description: "Nishant brings extensive experience in Product Management & Analytics. He has worked across major brands like Naukri, Jeevansathi, and Shiksha at Info Edge, and previously at Schlumberger. An alumnus of IIT Delhi and ISB Hyderabad, he excels in defining and super optimizing data-driven, AI enabled product growth.",
       image: "/images/nishant.jpeg",
       specialties: ["Product Management", "Analytics", "Data-Driven Strategy", "Growth"],
       in:"https://www.linkedin.com/in/nishant-pandey/",
@@ -25,7 +25,7 @@ const Team = () => {
     },
     {
       name: "Siddharth Chaturvedi",
-      role: "Head of Solutions & Partnerships",
+      role: "SVP Solutions & Partnerships",
       description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
       image: "images/sid.png",
       specialties: ["Customer Success", "Business Analysis", "Partnership Synergy", "Process Optimization"],
@@ -43,7 +43,7 @@ const Team = () => {
     },
     {
       name: "Brijesh Kannaujia",
-      role: "Head of Projects & Quality",
+      role: "VP Projects & Quality",
       description: "He is a seasoned software testing professional with over 18 years of experience delivering high-quality, robust and scalable solutions across B2B, B2C, product, and service-based companies. Proficient in the latest QA technologies and trends, he has successfully led testing efforts for organizations like Power2SME, MakeMyTrip, Sopra Banking Services, GlobalLogic, and CitiXsys. Known for building QA teams from the ground up, he specializes in setting up tailored Testing Centres of Excellence that align with project and business goals. ",
       image: "images/brijesh.png",
       specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
@@ -52,7 +52,7 @@ const Team = () => {
     },
     {
       name: "Rahul Ragtah",
-      role: "Design & Marketing Head",
+      role: "Director Design & Marketing",
       description: "Experienced UX/UI specialist with 12+ years of experience in designing web and mobile products across finance, travel, healthcare, and enterprise sectors. Having worked with brands like Power2SME , Axis Max Life, Time of India, Kissht, Pnb Metlife , CarDekho he bring expertise in both B2B and B2C product design. With a strong foundation in full-stack development, he bridges the gap between design and technology, collaborating closely with engineering teams to build practical, scalable, and high-impact solutions",
       image: "images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
