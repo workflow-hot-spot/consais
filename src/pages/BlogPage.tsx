@@ -939,7 +939,7 @@ The other key goals that this product achieves for you include the following:
 
 **Test Harness Included**
 
-Additionally, I have always admired software designs, development tools and practices that offer robust testing as an inherent part of them. Keeping that admiration in mind this tool too has a feature to allow testing for new composed messages before you push them to production.
+Additionally, We have always admired software designs, development tools and practices that offer robust testing as an inherent part of them. Keeping that admiration in mind this tool too has a feature to allow testing for new composed messages before you push them to production.
 \`\`\`
  
 \`\`\`
