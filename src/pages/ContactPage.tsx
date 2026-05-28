@@ -31,8 +31,8 @@ const ContactPage = () => {
       icon: <Mail className="h-8 w-8" />,
       title: "Email Support",
       description: "Detailed inquiries and documentation",
-      detail: "support@workflowcatalyst.com",
-      action: "mailto:support@workflowcatalyst.com",
+      detail: "support@consais.com",
+      action: "mailto:support@consais.com",
       availability: "24/7 - Response within 4 hours"
     },
     {

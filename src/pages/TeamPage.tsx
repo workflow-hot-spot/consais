@@ -154,7 +154,7 @@ const TeamPage = () => {
                   variant="ghost" 
                   size="lg" 
                   className="text-primary-foreground hover:bg-primary-foreground/10"
-                  onClick={() => window.open('mailto:careers@workflowcatalyst.com', '_blank')}
+                  onClick={() => window.open('mailto:careers@consais.com', '_blank')}
                 >
                   Send Your CV
                 </Button>

@@ -162,7 +162,7 @@ const TermsOfServicePage = () => {
                   </p>
                   <div className="bg-muted p-6 rounded-lg">
                     <p className="text-foreground font-medium mb-2">Consais</p>
-                    <p className="text-muted-foreground">Email: legal@workflowcatalyst.com</p>
+                    <p className="text-muted-foreground">Email: legal@consais.com</p>
                     <p className="text-muted-foreground">Phone: +91 9910815132</p>
                     <p className="text-muted-foreground">
                       Address: PTF 1E 302, Palm Drive, Gurgaon - 122108

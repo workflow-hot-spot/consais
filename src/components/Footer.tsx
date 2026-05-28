@@ -107,7 +107,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-glow" />
-                  <span className="text-background/90 text-sm">support@workflowcatalyst.com</span>
+                  <span className="text-background/90 text-sm">support@consais.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary-glow mt-0.5 flex-shrink-0" />

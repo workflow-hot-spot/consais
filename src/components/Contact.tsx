@@ -49,7 +49,7 @@ const Contact = () => {
         phone: formData.phone,
         service: formData.service,
         message: formData.message,
-        to_email: 'support@workflowcatalyst.com'
+        to_email: 'support@consais.com'
       };
       
       // Send email via EmailJS
@@ -97,8 +97,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      details: "support@workflowcatalyst.com",
-      action: "mailto:support@workflowcatalyst.com"
+      details: "support@consais.com",
+      action: "mailto:support@consais.com"
     },
     {
       icon: <MessageSquare className="h-6 w-6" />,
