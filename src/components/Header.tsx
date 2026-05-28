@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "/images/workflow-catalyst-logo.png";
+import logo from "/images/consais-logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -49,7 +49,7 @@ const Header = () => {
             <img src={logo} alt="Consais" className="h-8 w-8" />
             <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
           </Link>
-
+      <link rel="icon" type="image/svg+xml" href="/images/consais-logo.svg"></link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {/* About Dropdown */}

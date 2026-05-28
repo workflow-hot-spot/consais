@@ -9,7 +9,7 @@ import {
   ArrowUp
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "/images/workflow-catalyst-logo.png";
+import logo from "/images/consais-logo.png";
 
 const Footer = () => {
   const scrollToTop = () => {
