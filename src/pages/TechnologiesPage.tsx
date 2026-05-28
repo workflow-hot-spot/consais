@@ -21,11 +21,11 @@ const TechnologiesPage = () => {
               Our Core Technologies
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
-              Cutting-Edge Technology Stack
+                Our Modern, AI-Powered Technology Stack
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-              We leverage a diverse and robust set of technologies to build scalable, 
-                efficient, and innovative web-based solutions for our clients.
+                We leverage a diverse and robust set of technologies to build scalable, efficient, 
+                and intelligent solutions for our clients.
               </p>
               
             </div>
@@ -39,42 +39,41 @@ const TechnologiesPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               {[
                 {
-                  category: "Frontend Technologies",
+                  category: "Frontend Development",
                   technologies: [
                     { name: "React", color: "bg-blue-500", icon: "⚛️", description: "Modern UI development" },
                     { name: "Angular", color: "bg-red-600", icon: "🅰️", description: "Enterprise web apps" },
-                    { name: "HTML/CSS", color: "bg-orange-500", icon: "🎨", description: "Web fundamentals" },
-                    { name: "Tailwind CSS", color: "bg-cyan-500", icon: "💨", description: "Utility-first CSS" },
-                    { name: "JavaScript", color: "bg-yellow-500", icon: "📜", description: "Dynamic web behavior" },
-                    { name: "TypeScript", color: "bg-blue-600", icon: "📘", description: "Type-safe development" }
+                    { name: "TypeScript", color: "bg-blue-600", icon: "📘", description: "Type-safe development" },
+                    { name: "Tailwind CSS", color: "bg-cyan-500", icon: "💨", description: "Utility-first CSS" }
                   ]
                 },
                 {
-                  category: "Backend Technologies",
+                  category: "Backend & APIs",
                   technologies: [
+                    { name: "Node.js", color: "bg-green-600", icon: "🟢", description: "Server-side JavaScript" },
                     { name: "Java", color: "bg-orange-600", icon: "☕", description: "Enterprise-grade applications" },
-                    { name: "Python", color: "bg-blue-500", icon: "🐍", description: "AI/ML and data processing" },
-                    { name: "FastAPI", color: "bg-cyan-600", icon: "🚀", description: "High-performance APIs" },
-                    { name: "PHP", color: "bg-purple-600", icon: "🔧", description: "Web development solutions" },
-                    { name: "Node.js", color: "bg-green-600", icon: "🟢", description: "Server-side JavaScript" }
+                    { name: "Python", color: "bg-blue-500", icon: "🐍", description: "Versatile backend language" },
+                    { name: "FastAPI", color: "bg-cyan-600", icon: "🚀", description: "High-performance Python APIs" }
                   ]
                 },
                 {
-                  category: "Database Solutions",
+                  category: "AI, Automation & Data",
                   technologies: [
-                    { name: "MongoDB", color: "bg-green-600", icon: "🍃", description: "NoSQL document database" },
-                    { name: "MySQL", color: "bg-orange-500", icon: "🗃️", description: "Relational database system" },
+                    { name: "RAG", color: "bg-purple-500", icon: "🧠", description: "Retrieval-Augmented Generation" },
+                    { name: "Mistral AI", color: "bg-sky-500", icon: "🌬️", description: "High-performance LLMs" },
+                    { name: "Ollama", color: "bg-slate-500", icon: "🦙", description: "Local large language models" },
+                    { name: "n8n", color: "bg-indigo-500", icon: "🔗", description: "Workflow automation" },
+                    { name: "Camunda", color: "bg-orange-600", icon: "⚙️", description: "Business process automation" }
+                  ]
+                },
+                {
+                  category: "Databases & Infrastructure",
+                  technologies: [
                     { name: "PostgreSQL", color: "bg-blue-700", icon: "🐘", description: "Advanced relational database" },
-                    { name: "Redis", color: "bg-red-600", icon: "💾", description: "In-memory data store" }
-                  ]
-                },
-                {
-                  category: "Infrastructure & Tools",
-                  technologies: [
-                    { name: "Nginx", color: "bg-green-700", icon: "⚡", description: "High-performance web server" },
-                    { name: "Camunda", color: "bg-orange-600", icon: "⚙️", description: "Business process automation" },
+                    { name: "MongoDB", color: "bg-green-600", icon: "🍃", description: "NoSQL document database" },
+                    { name: "Redis", color: "bg-red-600", icon: "💾", description: "In-memory data store" },
                     { name: "Docker", color: "bg-blue-600", icon: "🐳", description: "Application containerization" },
-                    { name: "AWS", color: "bg-orange-500", icon: "☁️", description: "Cloud infrastructure" }
+                    { name: "Nginx", color: "bg-green-700", icon: "⚡", description: "High-performance web server" }
                   ]
                 }
               ].map((category, categoryIndex) => (

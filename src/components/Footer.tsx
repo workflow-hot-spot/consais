@@ -17,12 +17,13 @@ const Footer = () => {
   };
 
   const services = [
-    "Platform Solutions",
+    "Loan Origination Systems",
     "Digital Transformation", 
-    "Custom Web Development",
+    "Custom App Development",
+    "Platform Solutions",
     "Software Testing",
-    "UX/UI Design",
-    "Security & Optimization"
+     
+ 
   ];
 
   const quickLinks = [
@@ -111,7 +112,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary-glow mt-0.5 flex-shrink-0" />
-                  <span className="text-background/90 text-sm">#11, 13 Floor, Wave One, Sector 18, Noida, UP, India - 201301</span>
+                  <span className="text-background/90 text-sm">S1E 302, Palm Drive, Golf Course Ext Road, Gurgaon 122101</span>
                 </div>
               </div>
             </div>
@@ -163,13 +164,11 @@ const Footer = () => {
         <div className="border-t border-background/20 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-background/80 text-sm mb-4 md:mb-0">
-              <p>&copy; 2025 Consais. All rights reserved.</p>
+              <p>&copy; 2026 Consais. All rights reserved.</p>
             </div>
             
             <div className="flex items-center space-x-6">
-              <p className="text-background/60 text-xs">
-                Made with ❤️ for SME Digital Transformation
-              </p>
+          
               <Button
                 variant="ghost"
                 size="icon"

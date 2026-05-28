@@ -20,7 +20,34 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const [selectedService, setSelectedService] = useState<any>(null);
   const serviceCategories = [
+
     {
+      icon: <Workflow className="h-8 w-8" />,
+      title: "Digital Transformation",
+      description: "Comprehensive digital solutions to modernize your business operations",
+      color: "bg-purple-500",
+      services: [
+        "CRM Solutions - SuiteCRM, VTiger, Odoo, EspoCRM implementation with customization",
+          "CMS Platforms - WordPress, Joomla, Drupal setup with theming and SEO",
+        "eCommerce Platforms - WooCommerce, Magento, OpenCart with custom integrations",
+        "Custom Module Development - Tailored features and business logic enhancements",
+        "Third-Party Integration - Seamless API connectivity with finance and profiling tools"
+      ]
+    },
+    {
+      icon: <Code className="h-8 w-8" />,
+      title: "Custom App Development",
+      description: "Full-stack development services from concept to deployment",
+      color: "bg-green-500",
+      services: [
+        "Website Maintenance & Support - Regular updates and performance enhancements",
+        "Web Applications - End-to-end development from database to design",
+        "E-Commerce Websites - Custom online stores with secure payments and tracking",
+        "CMS Customizations - WordPress and Joomla tailored to business needs",
+        "API Development & Integration - Custom APIs and third-party integrations",
+        "Progressive Web Apps (PWA) - Mobile-app-like web experiences"
+      ]
+    },    {
       icon: <Cloud className="h-8 w-8" />,
       title: "Platform Solutions",
       description: "End-to-end infrastructure and cloud solutions for modern businesses",
@@ -32,34 +59,6 @@ const Services = () => {
         "Infrastructure Assessment & Optimization - Performance audits and tuning",
         "IT Strategy & Roadmap Consulting - Customized technology roadmaps",
         "Business Continuity & Disaster Recovery - Backup strategies and failover systems"
-      ]
-    },
-    {
-      icon: <Workflow className="h-8 w-8" />,
-      title: "Digital Transformation",
-      description: "Comprehensive digital solutions to modernize your business operations",
-      color: "bg-purple-500",
-      services: [
-        "CRM Solutions - SuiteCRM, VTiger, Odoo, EspoCRM implementation with customization",
-        "ERP Solutions - Odoo, ERPNext, Dolibarr setup with workflow automation",
-        "CMS Platforms - WordPress, Joomla, Drupal setup with theming and SEO",
-        "eCommerce Platforms - WooCommerce, Magento, OpenCart with custom integrations",
-        "Custom Module Development - Tailored features and business logic enhancements",
-        "Third-Party Integration - Seamless API connectivity with finance and SMS tools"
-      ]
-    },
-    {
-      icon: <Code className="h-8 w-8" />,
-      title: "Custom Web Development",
-      description: "Full-stack development services from concept to deployment",
-      color: "bg-green-500",
-      services: [
-        "Website Maintenance & Support - Regular updates and performance enhancements",
-        "Web Applications - End-to-end development from database to design",
-        "E-Commerce Websites - Custom online stores with secure payments and tracking",
-        "CMS Customizations - WordPress and Joomla tailored to business needs",
-        "API Development & Integration - Custom APIs and third-party integrations",
-        "Progressive Web Apps (PWA) - Mobile-app-like web experiences"
       ]
     },
     {
@@ -77,33 +76,21 @@ const Services = () => {
       ]
     },
     {
-      icon: <Palette className="h-8 w-8" />,
-      title: "UX/UI Design",
-      description: "User-centered design solutions for exceptional digital experiences",
-      color: "bg-pink-500",
-      services: [
-        "Information Architecture - Sitemap planning and navigation structure",
-        "Wireframing & Prototyping - Low and high-fidelity interactive prototypes",
-        "Usability Testing - Real-user testing and A/B test feedback loops",
-        "Visual Design & Branding - Design systems, color palettes, and typography",
-        "Responsive Design - Mobile-first layouts for all device types",
-        "Design Systems - Centralized reusable components with design tools"
-      ]
-    },
-    {
-      icon: <Shield className="h-8 w-8" />,
-      title: "Security & Optimization",
-      description: "Advanced security measures and performance optimization",
+      icon: <Database className="h-8 w-8" />,
+      title: "Loan Origination Systems",
+      description: "End-to-end automated solutions for loan processing and origination",
       color: "bg-red-500",
       services: [
-        "Security Hardening - Role management, SSL, and firewall integration",
-        "Performance Tuning - Database optimization, caching, and plugin audits",
-        "Ongoing Maintenance & Support - SLA-backed bug fixes and health checks",
-        "Open Source Consulting - Platform selection and scalability planning",
-        "Training & Documentation - Admin and end-user training programs",
-        "Accessibility Design (A11y) - WCAG compliant inclusive designs"
+        "Application Processing - Streamlined multi-channel loan application workflows",
+        "Credit Decisioning - Automated credit scoring and risk assessment integrations",
+        "Document Management - Secure document collection, OCR, and verification",
+        "Compliance & KYC - Built-in regulatory compliance and identity verification",
+        "Underwriting Automation - Customizable rule engines for loan approvals",
+        "Disbursement & Servicing - Seamless integration with payment gateways and core banking"
       ]
     }
+ 
+ 
   ];
 
   return (
