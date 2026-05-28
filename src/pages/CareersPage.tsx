@@ -171,7 +171,7 @@ const CareersPage = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
-                Workflow Catalyst
+                Consais
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
                 Join Our Team
@@ -232,7 +232,7 @@ const CareersPage = () => {
                   satisfaction of our team members. We believe that when our people thrive, our clients 
                   receive the best possible service and innovation."
                 </blockquote>
-                <div className="text-foreground font-semibold">— Workflow Catalyst Leadership Team</div>
+                <div className="text-foreground font-semibold">— Consais Leadership Team</div>
               </div>
             </div>
           </div>

@@ -46,8 +46,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Workflow Catalyst" className="h-8 w-8" />
-            <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Workflow Catalyst</span>
+            <img src={logo} alt="Consais" className="h-8 w-8" />
+            <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
           </Link>
 
           {/* Desktop Navigation */}

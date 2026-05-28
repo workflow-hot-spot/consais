@@ -45,8 +45,8 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link to="/" className="flex items-center space-x-3 mb-6">
-                <img src={logo} alt="Workflow Catalyst" className="h-10 w-10" />
-                <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Workflow Catalyst</span>
+                <img src={logo} alt="Consais" className="h-10 w-10" />
+                <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
               </Link>
               <p className="text-background/80 mb-6 leading-relaxed">
                 Empowering SMEs through digital transformation with cutting-edge 
@@ -163,7 +163,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-background/80 text-sm mb-4 md:mb-0">
-              <p>&copy; 2025 Workflow Catalyst. All rights reserved.</p>
+              <p>&copy; 2025 Consais. All rights reserved.</p>
             </div>
             
             <div className="flex items-center space-x-6">

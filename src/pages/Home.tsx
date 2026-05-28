@@ -42,7 +42,7 @@ const Home = () => {
 
   const testimonials = [
     {
-      quote: "I have been involved with software development in e-commerce, data mining, business anlaytics, GIS, supply chain, fintech, imagery processing domains. In fact been at this craft since the dot com boom. I've have had the opportunity to work with captive and outsourced development teams. A key issue that ails the out-sourcing model is lack of sense of ownership.  At workflow catalyst we think differently, all of us have spent a decade and more in product companies. Each one of us says \"What gets built here is a reflection about me, it better be good.\". Every project calls upon our ability to infuse a blend of science and art. A personal calling. Monetary success is a byproduct of our passion for technology and our commitment to our clients.",
+      quote: "I have been involved with software development in e-commerce, data mining, business anlaytics, GIS, supply chain, fintech, imagery processing domains. In fact been at this craft since the dot com boom. I've have had the opportunity to work with captive and outsourced development teams. A key issue that ails the out-sourcing model is lack of sense of ownership.  At Consais we think differently, all of us have spent a decade and more in product companies. Each one of us says \"What gets built here is a reflection about me, it better be good.\". Every project calls upon our ability to infuse a blend of science and art. A personal calling. Monetary success is a byproduct of our passion for technology and our commitment to our clients.",
       author: "Nitish Pandey",
       role: "Head of Strategy & Finance",
      
@@ -59,7 +59,7 @@ const Home = () => {
         <section className="py-20 bg-gradient-section">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Why Choose Workflow Catalyst</Badge>
+              <Badge variant="outline" className="mb-4">Why Choose Consais</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Driving Digital Excellence
               </h2>
@@ -242,7 +242,7 @@ const Home = () => {
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4">Trusted Partners</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Engines At These Brands Have <br />A Little Bit Of Workflow Catalyst
+                Engines At These Brands Have <br />A Little Bit Of Consais
               </h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto mb-12">
               The  team has multi-decade experience defining and building robust  solutions for leading organizations across various sectors, helping them achieve their digitalization goals.

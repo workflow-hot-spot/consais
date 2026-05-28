@@ -133,7 +133,7 @@ const PrivacyPolicyPage = () => {
                     If you have any questions about this Privacy Policy or our data practices, please contact us:
                   </p>
                   <div className="bg-muted p-6 rounded-lg">
-                    <p className="text-foreground font-medium mb-2">Workflow Catalyst</p>
+                    <p className="text-foreground font-medium mb-2">Consais</p>
                     <p className="text-muted-foreground">Email: privacy@workflowcatalyst.com</p>
                     <p className="text-muted-foreground">Phone: +91 9910815132</p>
                     <p className="text-muted-foreground">
