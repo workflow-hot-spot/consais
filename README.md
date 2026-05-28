@@ -49,3 +49,9 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+## Deployment
+It is auto deployed when pushed to git-hub repo.
+
+The github workflow pushes it using the user credentials on the server for flowhotspot_deploy
+On the server we are using PM2 to manage the node.js application restarts

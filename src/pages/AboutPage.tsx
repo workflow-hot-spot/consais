@@ -123,7 +123,7 @@ const AboutPage = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
-                About Workflow Catalyst
+                About Consais
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
                 Empowering SMEs Through Digital Excellence
@@ -169,7 +169,7 @@ const AboutPage = () => {
                         Our name embodies our core purpose. <em>'Workflow'</em> signifies the precise, optimized sequence of tasks 
                         that define efficient operations, from data integration (ETL) to customer relationship management (CRM) and beyond. 
                         <em>'Catalyst'</em> represents our role as the transformative agent – we don't just observe; we accelerate, 
-                        initiate, and enable profound positive change. Together, <strong>Workflow Catalyst</strong> ensures your 
+                        initiate, and enable profound positive change. Together, <strong>Consais</strong> ensures your 
                         business achieves more than the sum of its individual parts, driving synergistic growth through intelligent 
                         design and execution.
                       </p>

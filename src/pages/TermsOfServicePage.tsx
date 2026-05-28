@@ -38,14 +38,14 @@ const TermsOfServicePage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">1. Acceptance of Terms</h2>
                   <p className="text-muted-foreground">
-                    By accessing or using Workflow Catalyst's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services. We reserve the right to modify these terms at any time without prior notice.
+                    By accessing or using Consais's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services. We reserve the right to modify these terms at any time without prior notice.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">2. Service Description</h2>
                   <p className="text-muted-foreground mb-4">
-                    Workflow Catalyst provides comprehensive IT services including but not limited to:
+                    Consais provides comprehensive IT services including but not limited to:
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                     <li>Custom software development and application design</li>
@@ -93,7 +93,7 @@ const TermsOfServicePage = () => {
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                     <li><strong>Client-Specific Deliverables:</strong> Custom developments become client property upon full payment</li>
-                    <li><strong>Pre-existing IP:</strong> Workflow Catalyst retains rights to pre-existing tools and methodologies</li>
+                    <li><strong>Pre-existing IP:</strong> Consais retains rights to pre-existing tools and methodologies</li>
                     <li><strong>Third-party Components:</strong> Subject to original licensing terms and conditions</li>
                     <li><strong>Derivative Works:</strong> Rights determined by specific contract terms</li>
                     <li><strong>Open Source:</strong> Components remain subject to their respective licenses</li>
@@ -124,7 +124,7 @@ const TermsOfServicePage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">8. Limitation of Liability</h2>
                   <p className="text-muted-foreground">
-                    To the maximum extent permitted by law, Workflow Catalyst's liability for any claims arising from our services shall not exceed the total amount paid for the specific services giving rise to the claim. We are not liable for indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities.
+                    To the maximum extent permitted by law, Consais's liability for any claims arising from our services shall not exceed the total amount paid for the specific services giving rise to the claim. We are not liable for indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities.
                   </p>
                 </div>
 
@@ -161,7 +161,7 @@ const TermsOfServicePage = () => {
                     For questions regarding these Terms of Service, please contact us:
                   </p>
                   <div className="bg-muted p-6 rounded-lg">
-                    <p className="text-foreground font-medium mb-2">Workflow Catalyst</p>
+                    <p className="text-foreground font-medium mb-2">Consais</p>
                     <p className="text-muted-foreground">Email: legal@workflowcatalyst.com</p>
                     <p className="text-muted-foreground">Phone: +91 9910815132</p>
                     <p className="text-muted-foreground">
