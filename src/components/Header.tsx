@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -40,16 +40,26 @@ const Header = () => {
     return location.pathname === "/about" || location.pathname === "/how-we-work";
   };
 
+  useEffect(() => {
+    let link: HTMLLinkElement | null = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "icon";
+      document.head.appendChild(link);
+    }
+    link.type = "image/svg+xml";
+    link.href = "/images/consais-logo.svg";
+  }, []);
+
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 shadow-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Consais" className="h-8 w-8" />
+            <img src={logo} alt="Consais" className="h-12 w-12 object-contain" />
             <span className="text-xl font-bold bg-gradient-logo bg-clip-text text-transparent">Consais</span>
           </Link>
-      <link rel="icon" type="image/svg+xml" href="/images/consais-logo.svg"></link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {/* About Dropdown */}
