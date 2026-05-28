@@ -15,22 +15,22 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroSlides = [
+    // {
+    //   badge: "🚀 Driving Digital Excellence",
+    //   title: "Innovate. Transform.",
+    //   titleHighlight: "Achieve.",
+    //   subtitle: "Driving digital excellence with cutting-edge solutions tailored for your business success.",
+    //   stats: [
+    //      { value: "5⭐", label: " Performance" },
+    //     { value: "10+", label: "Industries Served" },
+    //     { value: "4", label: "ML Projects" },
+    //     { value: "5⭐", label: "Security" },
+    //    ]
+    // },
     {
-      badge: "🚀 Driving Digital Excellence",
-      title: "Innovate. Transform.",
-      titleHighlight: "Achieve.",
-      subtitle: "Driving digital excellence with cutting-edge solutions tailored for your business success.",
-      stats: [
-         { value: "5⭐", label: " Performance" },
-        { value: "10+", label: "Industries Served" },
-        { value: "4", label: "ML Projects" },
-        { value: "5⭐", label: "Security" },
-       ]
-    },
-    {
-      badge: "⚡ Transformational Automation",
-      title: "Web & Mobile",
-      titleHighlight: "Application Development",
+      badge: "⚡ Transformational Intelligence",
+      title: "Enterprise Wide Integration",
+      titleHighlight: "AI Driven ERP/CRM/LMS",
       subtitle: "Specialized app development powered by workflow frameworks, advanced AI technology, generative frameworks, and modern solutions.",
       stats: [
          { value: "5⭐", label: " Performance" },
