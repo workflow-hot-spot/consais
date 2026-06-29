@@ -28,6 +28,7 @@ All page content (testimonials, team bios, service lists, blog posts) is hardcod
 - **Blog** (`src/pages/BlogPage.tsx`) — posts are Markdown strings embedded in the file, rendered via `react-markdown`
 - **Analytics/chat**: Google Tag Manager, Google Analytics, and a Tawk.to live-chat widget, wired into `index.html`
 - Polished UI: gradients, fade/scale animations, glassmorphism, responsive nav with dropdown, all via the Tailwind config
+- **Equity Research Reports**: a "Interested in Indian Equity Research?" callout on `/blog` links to a sector-grouped table of contents at `/blog/equityresearch`, with individual reports at `/blog/equityresearch/<company-slug>`. Each report is an externally authored HTML file embedded via an auto-sizing iframe, so editing the HTML file updates the live report with no React changes needed. To add a new report: drop a new HTML file under `src/equity/reports/<sector>/`, add an entry to `src/data/equityResearch.ts`, create a small page component following `src/pages/equityReports/CrudeChemTechnologyReport.tsx`, and add one route in `src/App.tsx`.
 
 ## Local Development
 

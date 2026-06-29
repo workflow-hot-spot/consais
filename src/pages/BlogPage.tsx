@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 //To add space in markdown content use:
 /* 
@@ -970,6 +973,30 @@ const BlogPage = () => {
 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
   Explore articles, stories, and updates from our team and community.
 </p>
+    </div>
+  </section>
+
+  {/* Equity Research Callout */}
+  <section className="py-10 bg-background border-b border-border/50">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <Link to="/blog/equityresearch">
+        <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+          <CardContent className="p-6 flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-1">
+                Interested in Indian Equity Research?
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Browse our sector-wise equity research and market intelligence reports.
+              </p>
+            </div>
+            <Button variant="outline">
+              View Reports
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </CardContent>
+        </Card>
+      </Link>
     </div>
   </section>
 

@@ -18,7 +18,9 @@ import TermsOfServicePage from "./pages/TermsOfServicePage";
 import NotFound from "./pages/NotFound";
  
 import BlogPage from "./pages/BlogPage";
- 
+import EquityResearchPage from "./pages/EquityResearchPage";
+import CrudeChemTechnologyReport from "./pages/equityReports/CrudeChemTechnologyReport";
+
 
 
  
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/how-we-work" element={<HowWeWorkPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/equityresearch" element={<EquityResearchPage />} />
+          <Route path="/blog/equityresearch/crudechem-technology" element={<CrudeChemTechnologyReport />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/technologies" element={<TechnologiesPage />} />
