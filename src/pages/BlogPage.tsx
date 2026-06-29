@@ -28,7 +28,7 @@ SAM (Segment Anything Model) and YOLO (You Only Look Once) are both groundbreaki
 
 \`\`\`   \`\`\` _Primary Task & Output_
 
-*   **YOLO:** Primarily an **Object Detection** model. Its main goal is to draw a bounding box around recognized objects and classify what they are (e.g., "Car", "Person", "Defective Part").
+*   **YOLO:** Primarily an **Object Detection** model. It's main goal is to draw a bounding box around recognized objects and classify what they are (e.g., "Car", "Person", "Defective Part").
 *   **SAM:** A **Promptable Segmentation** model. Its main goal is to cut out the exact pixel-level shape (a mask) of an object. It doesn't inherently know *what* the object is (it doesn't classify); it just knows how to perfectly separate an object from its background based on a prompt (like a click, a box, or text).
 
 \`\`\`
