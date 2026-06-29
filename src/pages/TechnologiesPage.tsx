@@ -3,6 +3,20 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect } from "react";
+import {
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiOpenjdk,
+  SiPython,
+  SiMistralai,
+  SiOllama,
+  SiN8N,
+  SiPostgresql,
+  SiMongodb,
+  SiDocker,
+} from "react-icons/si";
 
 const TechnologiesPage = () => {
   useEffect(() => {
@@ -41,39 +55,33 @@ const TechnologiesPage = () => {
                 {
                   category: "Frontend Development",
                   technologies: [
-                    { name: "React", color: "bg-blue-500", icon: "⚛️", description: "Modern UI development" },
-                    { name: "Angular", color: "bg-red-600", icon: "🅰️", description: "Enterprise web apps" },
-                    { name: "TypeScript", color: "bg-blue-600", icon: "📘", description: "Type-safe development" },
-                    { name: "Tailwind CSS", color: "bg-cyan-500", icon: "💨", description: "Utility-first CSS" }
+                    { name: "React", color: "bg-[#149ECA]", icon: SiReact, description: "Modern UI development" },
+                    { name: "TypeScript", color: "bg-[#3178C6]", icon: SiTypescript, description: "Type-safe development" },
+                    { name: "Tailwind CSS", color: "bg-[#06B6D4]", icon: SiTailwindcss, description: "Utility-first CSS" }
                   ]
                 },
                 {
                   category: "Backend & APIs",
                   technologies: [
-                    { name: "Node.js", color: "bg-green-600", icon: "🟢", description: "Server-side JavaScript" },
-                    { name: "Java", color: "bg-orange-600", icon: "☕", description: "Enterprise-grade applications" },
-                    { name: "Python", color: "bg-blue-500", icon: "🐍", description: "Versatile backend language" },
-                    { name: "FastAPI", color: "bg-cyan-600", icon: "🚀", description: "High-performance Python APIs" }
+                    { name: "Node.js", color: "bg-[#5FA04E]", icon: SiNodedotjs, description: "Server-side JavaScript" },
+                    { name: "Java", color: "bg-[#000000]", icon: SiOpenjdk, description: "Enterprise-grade applications" },
+                    { name: "Python", color: "bg-[#3776AB]", icon: SiPython, description: "Versatile backend language" }
                   ]
                 },
                 {
                   category: "AI, Automation & Data",
                   technologies: [
-                    { name: "RAG", color: "bg-purple-500", icon: "🧠", description: "Retrieval-Augmented Generation" },
-                    { name: "Mistral AI", color: "bg-sky-500", icon: "🌬️", description: "High-performance LLMs" },
-                    { name: "Ollama", color: "bg-slate-500", icon: "🦙", description: "Local large language models" },
-                    { name: "n8n", color: "bg-indigo-500", icon: "🔗", description: "Workflow automation" },
-                    { name: "Camunda", color: "bg-orange-600", icon: "⚙️", description: "Business process automation" }
+                    { name: "Mistral AI", color: "bg-[#FA520F]", icon: SiMistralai, description: "High-performance LLMs" },
+                    { name: "Ollama", color: "bg-[#000000]", icon: SiOllama, description: "Local large language models" },
+                    { name: "n8n", color: "bg-[#EA4B71]", icon: SiN8N, description: "Workflow automation" }
                   ]
                 },
                 {
                   category: "Databases & Infrastructure",
                   technologies: [
-                    { name: "PostgreSQL", color: "bg-blue-700", icon: "🐘", description: "Advanced relational database" },
-                    { name: "MongoDB", color: "bg-green-600", icon: "🍃", description: "NoSQL document database" },
-                    { name: "Redis", color: "bg-red-600", icon: "💾", description: "In-memory data store" },
-                    { name: "Docker", color: "bg-blue-600", icon: "🐳", description: "Application containerization" },
-                    { name: "Nginx", color: "bg-green-700", icon: "⚡", description: "High-performance web server" }
+                    { name: "PostgreSQL", color: "bg-[#4169E1]", icon: SiPostgresql, description: "Advanced relational database" },
+                    { name: "MongoDB", color: "bg-[#47A248]", icon: SiMongodb, description: "NoSQL document database" },
+                    { name: "Docker", color: "bg-[#2496ED]", icon: SiDocker, description: "Application containerization" }
                   ]
                 }
               ].map((category, categoryIndex) => (
@@ -86,8 +94,8 @@ const TechnologiesPage = () => {
                       <Card key={techIndex} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
                         <CardContent className="p-6">
                           <div className="flex items-center space-x-4">
-                            <div className={`w-12 h-12 ${tech.color} rounded-xl flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform duration-300`}>
-                              {tech.icon}
+                            <div className={`w-12 h-12 ${tech.color} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
+                              <tech.icon className="w-6 h-6" />
                             </div>
                             <div>
                               <h3 className="text-lg font-semibold text-foreground">{tech.name}</h3>
