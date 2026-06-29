@@ -1,8 +1,35 @@
-# Welcome to your WorkFlow Catelyst Front End Wesbite
+# Consais Website
 
-## Project info
+Marketing/portfolio website for Consais (Concise AI Solutions), an AI/software consulting company.
 
+## Tech Stack
 
+- **Framework**: React 18 + TypeScript, built with **Vite** (client-side SPA, no SSR)
+- **Styling**: Tailwind CSS + **shadcn/ui** (Radix UI primitives) — see `src/components/ui/`
+- **Routing**: React Router v6
+- **Forms**: React Hook Form + Zod validation
+- **Email**: EmailJS — contact form submissions are sent directly from the browser, no backend
+- **Other**: TanStack Query, React Markdown (blog rendering), Lucide icons, next-themes (dark mode)
+
+## Architecture
+
+This is a static SPA with no backend, database, or CMS.
+
+- `src/App.tsx` — defines all routes
+- `src/pages/` — one file per route (Home, Services, About, Team, Blog, Careers, Contact, Technologies, How We Work, Privacy/Terms, 404)
+- `src/components/` — shared components (Header, Footer, Hero, Contact form, etc.)
+- `src/components/ui/` — shadcn/ui component library
+
+All page content (testimonials, team bios, service lists, blog posts) is hardcoded as JS objects/arrays inside the components. Updating content requires editing code and redeploying.
+
+## Functionality
+
+- **Contact form** (`src/components/Contact.tsx`) → EmailJS → sends to `support@consais.com`
+- **Blog** (`src/pages/BlogPage.tsx`) — posts are Markdown strings embedded in the file, rendered via `react-markdown`
+- **Analytics/chat**: Google Tag Manager, Google Analytics, and a Tawk.to live-chat widget, wired into `index.html`
+- Polished UI: gradients, fade/scale animations, glassmorphism, responsive nav with dropdown, all via the Tailwind config
+
+## Local Development
 
 **Use your preferred IDE**
 
@@ -40,18 +67,13 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 ## Deployment
-It is auto deployed when pushed to git-hub repo.
 
-The github workflow pushes it using the user credentials on the server for flowhotspot_deploy
-On the server we are using PM2 to manage the node.js application restarts
+GitHub Actions (`.github/workflows/main.yml`) deploys automatically on push to `main`:
+
+1. SCPs the repo to a self-hosted Hostinger VPS over SSH
+2. Runs `npm install && npm run build` on the server
+3. Wipes `/var/www/html/` and drops in the new `dist/` build
+4. Tests and reloads Nginx
+
+This is a static build served directly by Nginx — there is no PM2/Node.js process running on the server.
