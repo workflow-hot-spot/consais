@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Linkedin, 
-  Twitter, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Linkedin,
+  Twitter,
   Github,
-  ArrowUp
+  ArrowUp,
+  Building2,
+  FileText
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "/images/consais-logo.png";
@@ -113,6 +115,14 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary-glow mt-0.5 flex-shrink-0" />
                   <span className="text-background/90 text-sm">S1E 302, Palm Drive, Golf Course Ext Road, Gurgaon 122101</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Building2 className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90 text-sm">Ninianpa Solutions</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FileText className="h-5 w-5 text-primary-glow" />
+                  <span className="text-background/90 text-sm">GSTIN: 06AFUPP6960P1ZA</span>
                 </div>
               </div>
             </div>
