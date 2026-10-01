@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img">
+  <style>.title{font:600 20px Arial,sans-serif;fill:#fff}.label{font:600 17px Arial,sans-serif;fill:#fff}.small{font:14px Arial,sans-serif;fill:#94a3b8}.box{fill:#fff;fill-opacity:.05;stroke:#5d7082;stroke-width:2}.accent{fill:#38bdf8;fill-opacity:.08;stroke:#67e8f9;stroke-width:2}.line{stroke:#7b8c9d;stroke-width:3;fill:none}.arrow{fill:#7b8c9d}</style>
+  <text x="40" y="40" class="title">Active-passive business continuity</text>
+  <rect x="90" y="100" width="260" height="130" rx="20" class="accent"/><text x="220" y="145" text-anchor="middle" class="label">PRIMARY</text><text x="220" y="173" text-anchor="middle" class="small">Application + infrastructure</text><text x="220" y="197" text-anchor="middle" class="small">Production workload</text>
+  <rect x="550" y="100" width="260" height="130" rx="20" class="box"/><text x="680" y="145" text-anchor="middle" class="label">PASSIVE / DR</text><text x="680" y="173" text-anchor="middle" class="small">Recovery environment</text><text x="680" y="197" text-anchor="middle" class="small">Business continuity</text>
+  <path d="M350 165h190" class="line"/><path d="M525 157l15 8-15 8z" class="arrow"/>
+  <text x="450" y="142" text-anchor="middle" class="small">Replication / failover</text>
+  <rect x="250" y="275" width="400" height="52" rx="14" class="box"/><text x="450" y="307" text-anchor="middle" class="small">BCP · DR · Recovery procedures · Runbooks</text>
+</svg>

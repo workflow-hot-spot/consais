@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img">
+  <style>
+    .title{font:600 20px Arial,sans-serif;fill:#071827}.label{font:600 16px Arial,sans-serif;fill:#071827}.small{font:14px Arial,sans-serif;fill:#64748b}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2}.accent{fill:#e8f6fb;stroke:#2492c7;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none}.arrow{fill:#94a3b8}
+  </style>
+  <text x="40" y="45" class="title">Loan origination → loan management</text>
+  <rect x="40" y="105" width="180" height="82" rx="16" class="box"/><text x="130" y="138" text-anchor="middle" class="label">Applicant</text><text x="130" y="163" text-anchor="middle" class="small">Onboarding</text>
+  <rect x="280" y="105" width="200" height="82" rx="16" class="accent"/><text x="380" y="138" text-anchor="middle" class="label">Loan Origination</text><text x="380" y="163" text-anchor="middle" class="small">Application workflow</text>
+  <rect x="550" y="55" width="180" height="68" rx="16" class="box"/><text x="640" y="88" text-anchor="middle" class="label">CIBIL</text><text x="640" y="110" text-anchor="middle" class="small">Credit data</text>
+  <rect x="550" y="155" width="180" height="68" rx="16" class="box"/><text x="640" y="188" text-anchor="middle" class="label">Perfios</text><text x="640" y="210" text-anchor="middle" class="small">Financial data</text>
+  <rect x="800" y="105" width="220" height="82" rx="16" class="accent"/><text x="910" y="138" text-anchor="middle" class="label">Credit / Decisioning</text><text x="910" y="163" text-anchor="middle" class="small">Rules and workflows</text>
+  <rect x="280" y="300" width="240" height="82" rx="16" class="accent"/><text x="400" y="333" text-anchor="middle" class="label">Loan Management</text><text x="400" y="358" text-anchor="middle" class="small">Accounts and servicing</text>
+  <rect x="600" y="300" width="220" height="82" rx="16" class="box"/><text x="710" y="333" text-anchor="middle" class="label">Operations</text><text x="710" y="358" text-anchor="middle" class="small">Collections · servicing</text>
+  <path d="M220 146h55" class="line"/><path d="M480 146h315" class="line"/><path d="M640 123v29" class="line"/><path d="M640 223v45" class="line"/><path d="M640 268H400v27" class="line"/><path d="M520 341h75" class="line"/>
+  <path d="M270 140l10 6-10 6zM790 140l10 6-10 6zM395 290l6 10 6-10zM590 335l10 6-10 6z" class="arrow"/>
+  <text x="40" y="465" class="small">Illustrative architecture based on the team's lending platform experience.</text>
+</svg>

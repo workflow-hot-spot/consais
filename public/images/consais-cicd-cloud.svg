@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" role="img">
+  <style>.title{font:600 20px Arial,sans-serif;fill:#fff}.label{font:600 16px Arial,sans-serif;fill:#fff}.small{font:14px Arial,sans-serif;fill:#94a3b8}.box{fill:#fff;fill-opacity:.05;stroke:#5d7082;stroke-width:2}.accent{fill:#38bdf8;fill-opacity:.08;stroke:#67e8f9;stroke-width:2}.line{stroke:#7b8c9d;stroke-width:3;fill:none}.arrow{fill:#7b8c9d}</style>
+  <text x="40" y="40" class="title">Controlled software delivery</text>
+  <rect x="40" y="100" width="150" height="72" rx="14" class="box"/><text x="115" y="130" text-anchor="middle" class="label">Source</text><text x="115" y="153" text-anchor="middle" class="small">Git</text>
+  <rect x="240" y="100" width="150" height="72" rx="14" class="accent"/><text x="315" y="130" text-anchor="middle" class="label">Jenkins</text><text x="315" y="153" text-anchor="middle" class="small">CI / build</text>
+  <rect x="440" y="100" width="150" height="72" rx="14" class="box"/><text x="515" y="130" text-anchor="middle" class="label">Approval</text><text x="515" y="153" text-anchor="middle" class="small">Controlled change</text>
+  <rect x="640" y="100" width="150" height="72" rx="14" class="accent"/><text x="715" y="130" text-anchor="middle" class="label">Deployment</text><text x="715" y="153" text-anchor="middle" class="small">Release</text>
+  <rect x="840" y="80" width="210" height="112" rx="18" class="accent"/><text x="945" y="125" text-anchor="middle" class="label">AWS</text><text x="945" y="151" text-anchor="middle" class="small">Application infrastructure</text>
+  <path d="M190 136h45M390 136h45M590 136h45M790 136h45" class="line"/><path d="M232 130l10 6-10 6zM432 130l10 6-10 6zM632 130l10 6-10 6zM832 130l10 6-10 6z" class="arrow"/>
+  <rect x="350" y="245" width="400" height="60" rx="16" class="box"/><text x="550" y="272" text-anchor="middle" class="label">Terraform / Infrastructure as Code</text><text x="550" y="293" text-anchor="middle" class="small">Repeatable infrastructure and environments</text>
+</svg>
