@@ -30,11 +30,11 @@ jobs:
       run: |
         # Copy the contents of the built frontend (e.g., 'build' folder) to Nginx's static root
         # Adjust 'build' to 'dist' if Vite creates a 'dist' folder
-        scp -r -o StrictHostKeyChecking=no ./* ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }}:/home/${{ secrets.SSH_USERNAME }}/website/frontend/
-        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm install"
-        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && npm run build"
+        scp -r -o StrictHostKeyChecking=no ./* ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }}:/home/${{ secrets.SSH_USER_NITISH  }}/website/frontend/
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && npm install"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && npm run build"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "sudo rm -rf /var/www/html/*"
-        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USERNAME }}/website/frontend && mv dist/* /var/www/html/"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && mv dist/* /var/www/html/"
 
     
 
