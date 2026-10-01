@@ -33,7 +33,7 @@ jobs:
         scp -r -o StrictHostKeyChecking=no ./* ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }}:/home/${{ secrets.SSH_USER_NITISH  }}/website/frontend/
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && npm install"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && npm run build"
-        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "sudo rm -rf /var/www/html/*"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "rm -rf /var/www/html/*"
         ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER_NITISH }}@${{ secrets.SSL_HOST_CONSAIS }} "cd /home/${{ secrets.SSH_USER_NITISH  }}/website/frontend && mv dist/* /var/www/html/"
 
     
