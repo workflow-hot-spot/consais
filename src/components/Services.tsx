@@ -1,213 +1,147 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { useState } from "react";
-import { 
-  Cloud, 
-  Database, 
-  Code, 
-  Shield, 
-  Smartphone, 
-  Palette,
-  TestTube,
-  Workflow,
+import {
   ArrowRight,
-  CheckCircle
+  Cloud,
+  Code2,
+  Database,
+  GitBranch,
+  Landmark,
+  ShieldCheck,
+  Workflow,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const serviceCategories = [
+  {
+    icon: <Landmark className="h-7 w-7" />,
+    title: "Fintech Engineering",
+    description:
+      "Engineering financial applications and workflows with an emphasis on security, reliability, auditability and controlled change.",
+    services: [
+      "Financial application architecture",
+      "Payment and transaction workflows",
+      "Financial APIs and integrations",
+      "Secure application engineering",
+    ],
+  },
+  {
+    icon: <Workflow className="h-7 w-7" />,
+    title: "Lending Platforms",
+    description:
+      "End-to-end lending platforms covering origination, data integrations, credit workflows, loan management and servicing.",
+    services: [
+      "Loan origination systems",
+      "Loan management systems",
+      "CIBIL and Perfios integrations",
+      "Credit and underwriting workflows",
+    ],
+  },
+  {
+    icon: <Cloud className="h-7 w-7" />,
+    title: "Cloud Infrastructure",
+    description:
+      "Cloud infrastructure designed for secure production workloads, repeatable environments and operational resilience.",
+    services: [
+      "AWS infrastructure architecture",
+      "Network and workload design",
+      "Environment automation",
+      "Production infrastructure",
+    ],
+  },
+  {
+    icon: <GitBranch className="h-7 w-7" />,
+    title: "DevSecOps & CI/CD",
+    description:
+      "Controlled software delivery using source control, automated pipelines, approval stages and infrastructure as code.",
+    services: [
+      "Jenkins CI/CD pipelines",
+      "Infrastructure as Code with Terraform",
+      "Approval and change-control workflows",
+      "Automated build and deployment",
+    ],
+  },
+  {
+    icon: <ShieldCheck className="h-7 w-7" />,
+    title: "Secure Financial Integrations",
+    description:
+      "Secure integration of financial data providers and external services into applications and business workflows.",
+    services: [
+      "Financial data provider integrations",
+      "API security and access controls",
+      "Authentication and authorization",
+      "OWASP-aligned application security practices",
+    ],
+  },
+  {
+    icon: <Database className="h-7 w-7" />,
+    title: "Reliability, BCP & DR",
+    description:
+      "Resilient production architectures and operational practices designed around continuity, recovery and controlled failure.",
+    services: [
+      "Active-passive architectures",
+      "Business continuity planning",
+      "Disaster recovery design",
+      "Operational runbooks and recovery procedures",
+    ],
+  },
+];
+
 const Services = () => {
-  const [selectedService, setSelectedService] = useState<any>(null);
-  const serviceCategories = [
-
-    {
-      icon: <Workflow className="h-8 w-8" />,
-      title: "Digital Transformation",
-      description: "Comprehensive digital solutions to modernize your business operations",
-      color: "bg-purple-500",
-      services: [
-        "CRM Solutions - SuiteCRM, VTiger, Odoo, EspoCRM implementation with customization",
-          "CMS Platforms - WordPress, Joomla, Drupal setup with theming and SEO",
-        "eCommerce Platforms - WooCommerce, Magento, OpenCart with custom integrations",
-        "Custom Module Development - Tailored features and business logic enhancements",
-        "Third-Party Integration - Seamless API connectivity with finance and profiling tools"
-      ]
-    },
-    {
-      icon: <Code className="h-8 w-8" />,
-      title: "Custom App Development",
-      description: "Full-stack development services from concept to deployment",
-      color: "bg-green-500",
-      services: [
-        "Website Maintenance & Support - Regular updates and performance enhancements",
-        "Web Applications - End-to-end development from database to design",
-        "E-Commerce Websites - Custom online stores with secure payments and tracking",
-        "CMS Customizations - WordPress and Joomla tailored to business needs",
-        "API Development & Integration - Custom APIs and third-party integrations",
-        "Progressive Web Apps (PWA) - Mobile-app-like web experiences"
-      ]
-    },    {
-      icon: <Cloud className="h-8 w-8" />,
-      title: "Platform Solutions",
-      description: "End-to-end infrastructure and cloud solutions for modern businesses",
-      color: "bg-blue-500",
-      services: [
-        "Cloud & Data Infrastructure Services - AWS, Azure, GCP setup and optimization",
-        "Storage Management - SAN/NAS configuration, backups, storage optimization",
-        "Migration & Upgradation - Legacy system modernization with minimal downtime",
-        "Infrastructure Assessment & Optimization - Performance audits and tuning",
-        "IT Strategy & Roadmap Consulting - Customized technology roadmaps",
-        "Business Continuity & Disaster Recovery - Backup strategies and failover systems"
-      ]
-    },
-    {
-      icon: <TestTube className="h-8 w-8" />,
-      title: "Software Testing",
-      description: "Comprehensive testing services to ensure quality and reliability",
-      color: "bg-orange-500",
-      services: [
-        "Automation Testing - Selenium, Cypress, Appium with CI/CD integration",
-        "Manual Testing - In-depth human interaction and exploratory testing",
-        "Performance Testing - Load, stress, and endurance testing using JMeter",
-        "Compatibility Testing - Cross-browser, device, and OS compatibility",
-        "Mobile App Testing - iOS and Android functional and device testing",
-        "API Testing - Backend API validation using Postman and automation frameworks"
-      ]
-    },
-    {
-      icon: <Database className="h-8 w-8" />,
-      title: "Loan Origination Systems",
-      description: "End-to-end automated solutions for loan processing and origination",
-      color: "bg-red-500",
-      services: [
-        "Application Processing - Streamlined multi-channel loan application workflows",
-        "Credit Decisioning - Automated credit scoring and risk assessment integrations",
-        "Document Management - Secure document collection, OCR, and verification",
-        "Compliance & KYC - Built-in regulatory compliance and identity verification",
-        "Underwriting Automation - Customizable rule engines for loan approvals",
-        "Disbursement & Servicing - Seamless integration with payment gateways and core banking"
-      ]
-    }
- 
- 
-  ];
-
   return (
     <section id="services" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-  
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {serviceCategories.map((category, index) => (
-            <Card 
-              key={category.title} 
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {serviceCategories.map((category) => (
+            <Card
+              key={category.title}
+              className="group h-full border-border/60 bg-card/70 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-elegant"
             >
               <CardHeader>
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${category.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4 transition-transform duration-300 group-hover:scale-105">
                   {category.icon}
                 </div>
                 <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {category.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <p className="text-sm leading-6 text-muted-foreground pt-1">
                   {category.description}
-                </CardDescription>
+                </p>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3 mb-6">
-                  {category.services.slice(0, 4).map((service, serviceIndex) => (
-                    <li key={serviceIndex} className="flex items-start space-x-2 text-sm">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">{service.split(' - ')[0]}</span>
+                <ul className="space-y-3">
+                  {category.services.map((service) => (
+                    <li key={service} className="flex items-start gap-3 text-sm text-muted-foreground">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <span>{service}</span>
                     </li>
                   ))}
-                
-                  <Dialog>
-                  <DialogTrigger asChild>
-                  {category.services.length > 4 && (
-                    <li className="text-sm text-primary font-medium" onClick={() => setSelectedService(category)}>
-                      <a className="service-link">+{category.services.length - 4} more services</a>
-                    </li>
-                  )}
-                  </DialogTrigger>
-                  <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-                    <DialogHeader>
-                      <div className="flex items-center space-x-3 mb-4">
-                        <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${category.color} text-white`}>
-                          {category.icon}
-                        </div>
-                        <div>
-                          <DialogTitle className="text-2xl font-bold text-foreground">
-                            {category.title}
-                          </DialogTitle>
-                          <p className="text-muted-foreground">{category.description}</p>
-                        </div>
-                      </div>
-                    </DialogHeader>
-                    
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-foreground mb-4">
-                        Complete Service List:
-                      </h3>
-                      <div className="space-y-3">
-                        {category.services.map((service, serviceIndex) => (
-                          <div key={serviceIndex} className="flex items-start space-x-3 p-3 bg-gradient-section rounded-lg border border-border/50">
-                            <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-medium text-foreground text-sm">
-                                {service.split(' - ')[0]}
-                              </h4>
-                              {service.includes(' - ') && (
-                                <p className="text-muted-foreground text-xs mt-1">
-                                  {service.split(' - ')[1]}
-                                </p>
-                              )}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      
-                      <div className="bg-primary/5 rounded-lg p-4 border border-primary/20 mt-6">
-                        <h4 className="font-semibold text-foreground mb-2">Ready to get started?</h4>
-                        <p className="text-muted-foreground text-sm mb-3">
-                          Contact us to discuss how these services can transform your business.
-                        </p>
-                        <Link to="/contact">
-                        <Button variant="hero" size="sm" className="w-full">
-                        
-                          Contact Us
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                      
-                        </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </DialogContent>
-                </Dialog>
                 </ul>
-                
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-primary/5 rounded-2xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Need a Custom Solution?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Our experts can design and develop tailored solutions that perfectly match your unique business requirements.
-            </p>
-            <Button variant="hero" size="lg">
-              Discuss Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+        <div className="mt-16 rounded-2xl border border-primary/15 bg-primary/5 p-8 lg:p-10">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary mb-3">
+                Engineering engagements
+              </p>
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-3">
+                From architecture and infrastructure to production delivery
+              </h3>
+              <p className="text-muted-foreground leading-7">
+                We can engage around a complete financial platform, a specific engineering capability,
+                or the cloud and delivery infrastructure required to operate it reliably.
+              </p>
+            </div>
+            <Link to="/contact" className="shrink-0">
+              <Button variant="hero" size="lg">
+                Discuss Your Requirements
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
