@@ -47,8 +47,8 @@ const Header = () => {
       link.rel = "icon";
       document.head.appendChild(link);
     }
-    link.type = "image/svg+xml";
-    link.href = "/images/consais-logo.svg";
+    link.type = "image/x-icon";
+    link.href = "/favicon.ico";
   }, []);
 
   return (

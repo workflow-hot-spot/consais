@@ -15,17 +15,17 @@ const About = () => {
     {
       icon: <Target className="h-6 w-6" />,
       title: "Strategic Focus",
-      description: "Technology adoption strategies tailored for SME growth"
+      description: "Engineering choices shaped around financial workflows and production requirements"
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Expert Team",
-      description: "Seasoned professionals across all technology domains"
+      description: "Hands-on experience across financial platforms, cloud and reliability-focused systems"
     },
     {
       icon: <Lightbulb className="h-6 w-6" />,
       title: "Innovation",
-      description: "Cutting-edge solutions that drive digital transformation"
+      description: "Practical automation and integration that support real operating workflows"
     },
     {
       icon: <Award className="h-6 w-6" />,
@@ -35,15 +35,15 @@ const About = () => {
   ];
 
   const expertise = [
-    "CRM & ERP Solutions",
-    "Supply Chain Management",
-    "Tele-sales Systems",
-    "Loan Origination",
-    "API Gateways",
-    "Analytics & ETL",
-    "Datamart Design",
-    "Cloud AWS Adoption",
-    "IT Infrastructure Setup"
+    "Fintech Engineering",
+    "Loan Origination & Management",
+    "Financial API Integrations",
+    "AWS Cloud Infrastructure",
+    "Terraform Infrastructure as Code",
+    "Jenkins CI/CD",
+    "Secure Application Engineering",
+    "Workflow Automation with n8n",
+    "BCP & Disaster Recovery"
   ];
 
   return (
@@ -56,23 +56,17 @@ const About = () => {
           {/* Left Content */}
           <div>
             <h3 className="text-3xl font-bold text-foreground mb-6">
-              Your Trusted Technology Partner
+              Engineering for Financial and Mission-Critical Systems
             </h3>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                Our collective experience spans critical domains including CRM, ERP, SCM, Tele-sales, 
-                Loan Origination, API Gateways, Analytics, ETL, Datamart Design, Cloud AWS Adoption, 
-                IT Infrastructure Setup, and much more.
+                Our focus brings together fintech engineering, lending platforms, AWS cloud infrastructure, controlled CI/CD, secure integrations and operational resilience. We build and integrate systems with attention to architecture, change control, documentation and recovery.
               </p>
               <p className="text-lg leading-relaxed">
-                We are committed to helping SMEs initiate or evolve their digitalization journey. 
-                Our support most often takes the form of strategic advisory for technology adoption, 
-                expert guidance in team building, and facilitating effective partnerships with 
-                leading solution providers.
+                Senior team members have worked on core banking systems at Citibank and reliability applications for DRDO. Consais teams have also built loan origination and loan management systems for Giraaf and Power2SME, including integrations with financial data providers.
               </p>
               <p className="text-lg leading-relaxed">
-                We believe in building long-term partnerships, providing continuous support and 
-                adapting to the evolving technological landscape to keep you ahead.
+                We approach each engagement as an engineering system: application code, cloud infrastructure, security practices, delivery controls and operational readiness need to fit together.
               </p>
             </div>
 

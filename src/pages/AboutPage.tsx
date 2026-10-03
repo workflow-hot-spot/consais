@@ -1,316 +1,66 @@
 import Header from "@/components/Header";
-import About from "@/components/About";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {    Award, Calendar, Globe, Target, TrendingUp,   } from "lucide-react";
+import { ArrowRight, Landmark, Workflow, ShieldCheck, Cloud, GitBranch, Activity } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Briefcase, GraduationCap, MapPin, Users } from "lucide-react";
-const AboutPage = () => {
-  const timeline = [
-    {
-      year: "2023",
-      title: "Company Founded & First Major Milestone",
-      description: "Started with a vision to empower SMEs through digital transformation and Successfully delivered 5+ enterprise solutions during challenging times"
-    },
 
-    {
-      year: "2024",
-      title: "Cloud Specialization & Team Expansion",
-      description: "Became certified partners with AWS, Azure, and Google Cloud and Grew our expert team to cover all major technology domains"
-    },
-    {
-      year: "2025",
-      title: "Innovation Focus & 40+ Projects delivered",
-      description: "Expanding into AI/ML and advanced automation solutions and Reached milestone of 50+ successful project deliveries"
-    }
-  ];
+const experience = [
+  { title: "Core banking", text: "Senior members of our team have worked on core banking systems at Citibank." },
+  { title: "Lending platforms", text: "Our teams built complete loan origination and loan management systems for Giraaf and Power2SME, including integrations with providers such as CIBIL and Perfios." },
+  { title: "Regulated environments", text: "Experience includes systems, processes, documentation and change records reviewed in the context of requirements applicable to NBFCs." },
+  { title: "Reliability engineering", text: "Our team also has experience working on reliability applications for DRDO." },
+];
 
-  const achievements = [
-    {
-      icon: <Users className="h-8 w-8" />,
-      number: "99+",
-      label: "Years Combined Experience",
-      description: "Trusted Professionals"
-    }, 
-    {
-      icon: <Award className="h-8 w-8" />,
-      number: "100+",
-      label: "Projects Delivered",
-      description: "Successful implementations"
-    },
-    {
-      icon: <Globe className="h-8 w-8" />,
-      number: "10+",
-      label: "Industries Served",
-      description: "Diverse sectors covered"
-    },
-  /*   {
-      icon: <TrendingUp className="h-8 w-8" />,
-      number: "95%",
-      label: "Client Retention",
-      description: "Long-term partnerships"
-    } */
-  ];
-  const teamStats = [
-    {
-      icon: <Users className="h-6 w-6" />,
-      number: "90+",
-      label: "Combined Years",
-      description: "Of industry experience"
-    },
-    {
-      icon: <Briefcase className="h-6 w-6" />,
-      number: "40+",
-      label: "Projects Led",
-      description: "Successful deliveries"
-    },
-    {
-      icon: <GraduationCap className="h-6 w-6" />,
-      number: "15+",
-      label: "Certifications",
-      description: "Professional credentials"
-    },
-    {
-      icon: <MapPin className="h-6 w-6" />,
-      number: "5+",
-      label: "Countries",
-      description: "International experience"
-    }
-  ];
+const focusAreas = [
+  { icon: Landmark, title: "Financial systems", text: "Lending workflows, financial applications, APIs and external data-provider integrations." },
+  { icon: Cloud, title: "Cloud infrastructure", text: "AWS environments, infrastructure automation and production workload design." },
+  { icon: GitBranch, title: "Controlled delivery", text: "Jenkins CI/CD, approval stages, version control and Infrastructure as Code with Terraform." },
+  { icon: ShieldCheck, title: "Secure application engineering", text: "Security-aware design, access controls, integration patterns and OWASP-aligned practices." },
+  { icon: Activity, title: "Reliability & recovery", text: "Active-passive architecture, business continuity planning, disaster recovery and runbooks." },
+  { icon: Workflow, title: "Workflow automation", text: "Bespoke workflows and system integrations, including automation using tools such as n8n." },
+];
 
- 
-  const values = [
-    {
-      title: "Innovation",
-      description: "We constantly explore new technologies and methodologies to deliver cutting-edge solutions that keep our clients ahead of the competition.",
-      icon: "💡"
-    },
-    {
-      title: "Partnership",
-      description: "We believe in building long-term relationships with our clients, acting as trusted advisors throughout their digital transformation journey.",
-      icon: "🤝"
-    },
-    {
-      title: "Excellence", 
-      description: "Quality is at the core of everything we do. We maintain rigorous standards to ensure our solutions exceed expectations.",
-      icon: "⭐"
-    },
-    {
-      title: "Transparency",
-      description: "We maintain open communication with clear project timelines, honest feedback, and transparent pricing throughout our engagement.",
-      icon: "🔍"
-    },
-    {
-      title: "Agility",
-      description: "We adapt quickly to changing requirements and market conditions, ensuring our solutions remain relevant and effective.",
-      icon: "⚡"
-    },
-    {
-      title: "Impact",
-      description: "Every solution we deliver is designed to create measurable business value and drive meaningful results for our clients.",
-      icon: "🎯"
-    }
-  ];
+const AboutPage = () => (
+  <div className="min-h-screen bg-background">
+    <Header />
+    <main>
+      <section className="bg-[#071827] pb-16 pt-32 text-white lg:pb-20 lg:pt-36">
+        <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
+          <Badge variant="outline" className="mb-6 border-white/20 bg-white/5 text-cyan-200">About Consais</Badge>
+          <h1 className="mx-auto max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">Fintech engineering, cloud infrastructure and secure systems.</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">Consais focuses on the engineering behind financial and mission-critical systems—from application architecture and integrations to infrastructure, controlled deployment and recovery.</p>
+          <div className="mt-8"><Link to="/contact"><Button size="lg" className="bg-white text-[#071827] hover:bg-slate-100">Discuss a project <ArrowRight className="ml-2 h-5 w-5" /></Button></Link></div>
+        </div>
+      </section>
 
-  return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        {/* Hero Section */}
-        <section className="pt-24 pb-16 bg-gradient-hero">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
-              <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
-                About Consais
-              </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
-                Empowering SMEs Through Digital Excellence
-              </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-                We are a dedicated team of technology experts committed to transforming Small and Medium-sized Enterprises 
-                through strategic digital solutions. Our expertise spans across critical business domains, helping you navigate 
-                the complex technological landscape with confidence and clarity.
-              </p>
-              <Link to="/contact">
-                <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
-                  Work With Us
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
+      <section className="py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold tracking-[0.18em] text-primary">OUR FOCUS</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">A specialist engineering approach.</h2>
+            <p className="mt-5 text-lg leading-8 text-muted-foreground">Production systems need more than application code. Architecture, security, cloud infrastructure, release controls, documentation and operational resilience need to work together.</p>
           </div>
-        </section>
-
-            {/* Company Philosophy */}
-            <section className="py-20 bg-gradient-section">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-6 bg-primary/10 text-primary border-primary/20">Company Philosophy</Badge>
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Our Foundation & Purpose
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Understanding our name, vision, and mission that drives everything we do
-              </p>
-            </div>
-
-            <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {/* Workflow + Catalyst Card */}
-                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-3">
-                  <CardContent className="p-8 lg:p-10">
-                    <div className="text-center">
-                      <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                        <span className="text-primary">Workflow</span> + <span className="text-accent">AI</span> = <span className="bg-gradient-primary bg-clip-text text-transparent">Business Acceleration!</span>
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed text-lg max-w-4xl mx-auto">
-                        Our name embodies our core purpose. <em>'Consais'</em> inspired by "Concise" stands for "Concise AI Solutions". Concise signifies the precise, optimized solution for your sequence of tasks 
-                        that define efficient operations. We offer AI enablement for data integration (ETL), Loan Origination Systems (LOS), Legacy Marketing Platforms and customer relationship management (CRM) and beyond. 
-                      Not only softwar, we help you at your factory floor and workshops. We can integrate IoT (using rasberry pi) and computer vision (YOLO and SAM) to bring real-time intelligence and smart automation to physical operations. 
-                        We listen, we observe; we accelerate. Together, <strong>Consais</strong> ensures your 
-                        business achieves more than the sum of its individual parts, driving synergistic growth through intelligent 
-                        design and execution.
-
-
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Vision Card */}
-                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-1">
-                  <CardContent className="p-8 h-full">
-                    <div className="flex flex-col h-full">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 mx-auto">
-                        <Target className="h-8 w-8" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Our Vision</h3>
-                      <p className="text-muted-foreground leading-relaxed flex-grow">
-                        To be the indispensable partner for Small and Medium-sized Enterprises (SMEs) in supply chain, 
-                        tele-marketing, NBFCs, manufacturing, trading and finance, delivering intelligent, intuitive, 
-                        and secure web-based solutions that unlock huge operational efficiency and foster sustainable 
-                        growth in a rapidly digitizing world.
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Mission Card */}
-                <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm lg:col-span-2">
-                  <CardContent className="p-8 h-full">
-                    <div className="flex flex-col h-full">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/10 text-accent mb-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300 mx-auto">
-                        <Award className="h-8 w-8" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Our Mission</h3>
-                      <p className="text-muted-foreground leading-relaxed flex-grow">
-                        To empower corporate teams by designing and implementing super robust, intuitive, and secure 
-                        workflows and applications. We transform complex data into actionable insights, enabling 
-                        information-rich environments that drive efficiency, reduce friction, and accelerate your 
-                        digitalization journey.
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {focusAreas.map((item) => { const Icon = item.icon; return <Card key={item.title} className="h-full border-border/60"><CardContent className="p-6"><div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 text-primary"><Icon className="h-6 w-6" /></div><h3 className="text-lg font-semibold text-foreground">{item.title}</h3><p className="mt-2 leading-7 text-muted-foreground">{item.text}</p></CardContent></Card>; })}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Main About Component */}
-        <About />
-
-       
-        {/* Achievements */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Our Team</Badge>
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Numbers That Tell Our Story
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                These metrics reflect our commitment to delivering exceptional results and building lasting partnerships.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamStats.map((achievement, index) => (
-                <Card key={achievement.label} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm text-center">
-                  <CardContent className="p-8">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      {achievement.icon}
-                    </div>
-                    <div className="text-4xl font-bold text-foreground mb-2">{achievement.number}</div>
-                    <div className="text-lg font-semibold text-foreground mb-1">{achievement.label}</div>
-                    <div className="text-muted-foreground text-sm">{achievement.description}</div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+      <section className="bg-slate-50 py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center"><p className="text-sm font-semibold tracking-[0.18em] text-primary">ENGINEERING EXPERIENCE</p><h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Experience grounded in real systems.</h2><p className="mt-4 text-lg leading-8 text-muted-foreground">These examples describe team members’ prior experience and Consais delivery work; they do not imply that every named organization is a Consais client.</p></div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {experience.map((item) => <div key={item.title} className="rounded-2xl border border-border bg-background p-6"><h3 className="text-lg font-semibold text-foreground">{item.title}</h3><p className="mt-3 leading-7 text-muted-foreground">{item.text}</p></div>)}
           </div>
-        </section>
+        </div>
+      </section>
 
-    
-
-        {/* Our Values */}
-        <section className="py-20 bg-gradient-section">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">Our Values</Badge>
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                What Drives Us Forward
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our core values guide every decision we make and every solution we deliver.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {values.map((value, index) => (
-                <Card key={value.title} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="text-4xl mb-4">{value.icon}</div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{value.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-primary rounded-3xl p-12 text-center text-primary-foreground">
-              <h2 className="text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
-              <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-                Join the growing number of SMEs who have transformed their businesses with our expertise. 
-                Let's discuss how we can help you achieve your digital transformation goals.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact">
-                  <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
-                    Start Your Journey
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Link to="/team">
-                  <Button variant="ghost" size="lg" className="text-primary-foreground hover:bg-primary-foreground/10">
-                    Meet Our Team
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
-};
+      <section className="py-16"><div className="container mx-auto px-4 text-center sm:px-6 lg:px-8"><h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Have a system to build, integrate or modernize?</h2><p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">Tell us about the workflow, operating environment and constraints. We can discuss a practical architecture and delivery approach.</p><div className="mt-7"><Link to="/contact"><Button size="lg">Talk to Consais <ArrowRight className="ml-2 h-5 w-5" /></Button></Link></div></div></section>
+    </main>
+    <Footer />
+  </div>
+);
 
 export default AboutPage;

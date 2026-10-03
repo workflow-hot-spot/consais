@@ -33,7 +33,7 @@ const ContactPage = () => {
       description: "Detailed inquiries and documentation",
       detail: "support@consais.com",
       action: "mailto:support@consais.com",
-      availability: "24/7 - Response within 4 hours"
+      availability: "For project enquiries"
     },
     {
       icon: <MessageSquare className="h-8 w-8" />,
@@ -41,7 +41,7 @@ const ContactPage = () => {
       description: "Instant messaging for quick queries",
       detail: "Chat with us now",
       action: "https://wa.me/919910815132",
-      availability: "Real-time responses"
+      availability: "For quick questions"
     },
     {
       icon: <Video className="h-8 w-8" />,
@@ -59,19 +59,19 @@ const ContactPage = () => {
       icon: <FileText className="h-6 w-6" />,
       title: "Project Inquiry",
       description: "New project discussions and requirements",
-      topics: ["Custom development", "Digital transformation", "System integration", "Platform migration"]
+      topics: ["Lending platforms", "Financial APIs", "Cloud infrastructure", "Workflow automation"]
     },
     {
       icon: <HeadphonesIcon className="h-6 w-6" />,
       title: "Technical Support",
       description: "Existing client support and maintenance",
-      topics: ["Bug fixes", "Performance issues", "Feature requests", "Training needs"]
+      topics: ["Production reliability", "Deployment pipelines", "Recovery planning", "System integrations"]
     },
     {
       icon: <Calendar className="h-6 w-6" />,
       title: "Consultation",
       description: "Strategic guidance and technology consulting",
-      topics: ["Technology roadmap", "Architecture review", "Best practices", "Cost optimization"]
+      topics: ["Architecture review", "AWS / Terraform", "CI/CD controls", "Security practices"]
     }
   ];
 
@@ -81,16 +81,16 @@ const ContactPage = () => {
       answer: "Timeline is a function of the project size and complexity. We provide estimated timelines post scope anlaysis and solution selection. We believe adhering to your budget, end-objective and quality is far more essential than just a precise timeline."
     },
     {
-      question: "Do you provide ongoing support after project completion?",
-      answer: "A software is like a living document, always evolving and growing with your business. We offer comprehensive maintenance and SLA backed support packages. "
+      question: "Can you help with infrastructure and delivery as well as application code?",
+      answer: "Yes. Depending on the engagement, our work can include AWS architecture, Terraform-based infrastructure, Jenkins CI/CD, approval and change-control stages, operational documentation and BCP / disaster recovery planning."
     },
     {
-      question: "Can you work with our existing systems?",
-      answer: "Absolutely. We specialize in system integration and can seamlessly connect new solutions with your existing infrastructure and workflows."
+      question: "Can you integrate existing financial data providers and business workflows?",
+      answer: "We have experience with lending-platform integrations, including providers such as CIBIL and Perfios, as well as APIs and bespoke workflow automation. The exact approach depends on the systems and access available."
     },
     {
-      question: "What industries do you serve?",
-      answer: "We work across multiple industries including finance, healthcare, e-commerce, manufacturing, education, and more. Our solutions are tailored to industry-specific requirements."
+      question: "What kinds of systems do you focus on?",
+      answer: "Our focus is fintech engineering, lending platforms, cloud infrastructure, secure application and financial integrations, controlled CI/CD, bespoke workflow automation and reliability engineering."
     }
   ];
 
@@ -106,17 +106,16 @@ const ContactPage = () => {
                 Contact Us
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
-                Let's Transform Your Business Together
+                Let's discuss the system you need to build
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                Ready to start your digital transformation journey? Our experts are here to discuss 
-                your project requirements and provide customized solutions that drive real results.
+                Whether you are building a lending platform, improving cloud infrastructure, automating delivery or connecting financial systems, tell us about the requirements and constraints.
               </p>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Start Your Project Now
               </Button>
@@ -180,8 +179,7 @@ const ContactPage = () => {
                 What Can We Help You With?
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Whether you're starting a new project, need technical support, or want strategic guidance, 
-                we have the expertise to help.
+                Contact us about fintech engineering, cloud infrastructure, secure integrations, workflow automation or operational resilience.
               </p>
             </div>
 

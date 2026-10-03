@@ -8,7 +8,7 @@ const Team = () => {
     {
       name: "Nitish Pandey",
       role: "Founder and Sales Head",
-      description: "Nitish is a PG in CS from IIT(B) and has 25 years of workex in the software industry. He served 15 years in the Indian Navy from where he brings design & process orientation which have only evolved during his stints at e-commerce startups Semiprecious.com, Gaana.com, Snapdeal.com and then as the CTO of the fintech Bizfunds.com. He defines our strategy and serves as a fulcrum for our resolve to build quality solutions. Innovation in solution design is his forte.",
+      description: "A postgraduate in computer science from IIT Bombay, Nitish brings long-running software industry experience and process orientation from his service in the Indian Navy. His experience includes technology and product leadership at digital businesses and fintech company Bizfunds.com. At Consais, he shapes engineering strategy and solution design.",
       image: "/images/nitish.png",
       specialties: ["Strategic Planning", "Product Innovation", "Financial Management", "Software Development"],
       in:"https://www.linkedin.com/in/nitishnitish/",
@@ -17,7 +17,7 @@ const Team = () => {
     {
       name: "Nishant Pandey",
       role: "SVP Business Development",
-      description: "Nishant brings extensive experience in Product Management & Analytics. He has worked across major brands like Naukri, Jeevansathi, and Shiksha at Info Edge, and previously at Schlumberger. An alumnus of IIT Delhi and ISB Hyderabad, he excels in defining and super optimizing data-driven, AI enabled product growth.",
+      description: "Nishant brings experience in product management, analytics and data-led product strategy. He has worked across Naukri, Jeevansathi and Shiksha at Info Edge, and previously at Schlumberger. An alumnus of IIT Delhi and ISB Hyderabad, he helps connect business objectives with product and solution priorities.",
       image: "/images/nishant.jpg",
       specialties: ["Product Management", "Analytics", "Data-Driven Strategy", "Growth"],
       in:"https://www.linkedin.com/in/nishant-pandey/",
@@ -26,8 +26,8 @@ const Team = () => {
     {
       name: "Siddharth Chaturvedi",
       role: "SVP Solutions & Partnerships",
-      description: "With over 18 years of experience in Product management, Digital transformation, and solution building, Siddharth has spearheaded and launched multiple digital initiatives in diverse domains like B2B/B2C commerce, Supply Chain management, Fintech, Classifieds while working in organisations like naukri.com, Reliance Entertainment, Askme, and Power2sme.",
-      image: "images/sid.png",
+      description: "With over 18 years of experience in product management and solution building, Siddharth has led digital initiatives across B2B/B2C commerce, fintech and classifieds. His experience includes roles at Naukri.com, Reliance Entertainment, Askme and Power2SME, bringing business requirements and engineering delivery together.",
+      image: "/images/sid.png",
       specialties: ["Customer Success", "Business Analysis", "Partnership Synergy", "Process Optimization"],
       in:"https://www.linkedin.com/in/siddharthchaturvedi/",
      
@@ -36,25 +36,25 @@ const Team = () => {
       name: "Sunil Kunwar",
       role: "VP of Engineering",
       description: "Experienced Technology Consultant and Solution Architect with a strong background in database design, corporate action automation, and document management solutions for institutional clients. Played a key role at Calance, Information Mosaic, and Citigroup, delivering critical systems for global clients like UBS and ADIA. At Power2SME, built the entire B2B tech stack and NBFC loan management platform, covering end-to-end processes from lead generation to loan disbursement and multi-cycle utilization. Proven track record of designing and delivering robust, business-critical applications.",
-      image: "images/sunil.png",
-      specialties: ["System Architecture", "ETL Solutions", "CRM Development", "Technical Leadership"],
+      image: "/images/sunil.png",
+      specialties: ["System Architecture", "Financial Platforms", "Database Design", "Technical Leadership"],
       in:"https://www.linkedin.com/in/kunwarsunilsingh/",
     
     },
     {
       name: "Brijesh Kannaujia",
       role: "VP Projects & Quality",
-      description: "He is a seasoned software testing professional with over 18 years of experience delivering high-quality, robust and scalable solutions across B2B, B2C, product, and service-based companies. Proficient in the latest QA technologies and trends, he has successfully led testing efforts for organizations like Power2SME, MakeMyTrip, Sopra Banking Services, GlobalLogic, and CitiXsys. Known for building QA teams from the ground up, he specializes in setting up tailored Testing Centres of Excellence that align with project and business goals. ",
-      image: "images/brijesh.png",
-      specialties: ["Quality Assurance", "Project Delivery", "Performance Optimization", "Client Success"],
+      description: "Brijesh brings over 18 years of experience in software quality and project delivery across product and service organizations. His work has included delivery and quality initiatives for Power2SME, MakeMyTrip, Sopra Banking Services, GlobalLogic and CitiXsys. He brings a structured approach to delivery readiness, release quality and coordination across teams.",
+      image: "/images/brijesh.png",
+      specialties: ["Delivery Governance", "Release Readiness", "Project Management", "Quality Engineering"],
       in:"https://www.linkedin.com/in/brijesh-kannaujia/",
      
     },
     {
       name: "Rahul Ragtah",
       role: "Director Design & Marketing",
-      description: "Experienced UX/UI specialist with 12+ years of experience in designing web and mobile products across finance, travel, healthcare, and enterprise sectors. Having worked with brands like Power2SME , Axis Max Life, Time of India, Kissht, Pnb Metlife , CarDekho he bring expertise in both B2B and B2C product design. With a strong foundation in full-stack development, he bridges the gap between design and technology, collaborating closely with engineering teams to build practical, scalable, and high-impact solutions",
-      image: "images/rahul.png",
+      description: "Rahul brings over 12 years of experience designing web and mobile products across finance, travel, healthcare and enterprise environments. His experience includes work with Power2SME, Axis Max Life, Kissht, PNB MetLife and CarDekho. He connects user experience and product design with practical implementation needs.",
+      image: "/images/rahul.png",
       specialties: ["UX/UI Design", "Product Design", "Usability Analyst", "Brand Strategy"],
       in:"https://in.linkedin.com/in/rahulragtah",
     
@@ -146,7 +146,7 @@ const Team = () => {
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Collaboration</h4>
               <p className="text-muted-foreground text-sm">
-                Working together with our clients as true partners in their digital journey.
+                Working with stakeholders to understand requirements, dependencies and operating constraints.
               </p>
             </div>
             <div className="text-center">
@@ -155,7 +155,7 @@ const Team = () => {
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Innovation</h4>
               <p className="text-muted-foreground text-sm">
-                Continuously exploring new technologies and methodologies to deliver cutting-edge solutions.
+                Using appropriate tools and patterns to solve the engineering problem without unnecessary complexity.
               </p>
             </div>
             <div className="text-center">
@@ -164,7 +164,7 @@ const Team = () => {
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Excellence</h4>
               <p className="text-muted-foreground text-sm">
-                Committed to delivering high-quality solutions that drive measurable business results.
+                Paying attention to architecture, change control, documentation and production readiness.
               </p>
             </div>
           </div>

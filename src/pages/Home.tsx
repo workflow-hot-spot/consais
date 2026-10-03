@@ -16,7 +16,7 @@ const Home = () => {
   ];
 
   const technologyStack = [
-    [Cloud, "AWS"], [Workflow, "Spring Boot"], [GitBranch, "Jenkins"], [Server, "Terraform"], [Database, "PostgreSQL"], [ShieldCheck, "Secure Delivery"],
+    [Cloud, "AWS"], [Workflow, "Spring Boot"], [GitBranch, "Jenkins"], [Server, "Terraform"], [Database, "Docker / Kubernetes"], [Workflow, "n8n Automation"], [ShieldCheck, "Secure Delivery"],
   ];
 
   const experience = [
@@ -154,7 +154,7 @@ const Home = () => {
             </div>
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
               {[
-                [Cloud, "AWS"], [Workflow, "Spring Boot"], [GitBranch, "Jenkins"], [Server, "Terraform"], [Database, "PostgreSQL"], [ShieldCheck, "Secure Delivery"],
+                [Cloud, "AWS"], [Workflow, "Spring Boot"], [GitBranch, "Jenkins"], [Server, "Terraform"], [Database, "Docker / Kubernetes"], [Workflow, "n8n Automation"], [ShieldCheck, "Secure Delivery"],
               ].map(([Icon, label]) => (
                 <div key={label as string} className="flex min-h-24 flex-col items-center justify-center rounded-2xl border border-border bg-background p-4 text-center">
                   <Icon className="h-6 w-6 text-primary" />

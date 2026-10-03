@@ -115,14 +115,14 @@ const Contact = () => {
   ];
 
   const services = [
-    "Bespoke Application Development",
-    "Platform Evolution & Optimization",
-    "Digital Transformation",
-    "Software Testing",
-    "UX/UI Design",
-    "Security & Compliance",
-    "Process & Tech Consulting",
-    
+    "Fintech Engineering",
+    "Lending Platforms (LOS / LMS)",
+    "Cloud Infrastructure (AWS)",
+    "DevSecOps, CI/CD & Terraform",
+    "Secure Financial Integrations",
+    "Reliability, BCP & Disaster Recovery",
+    "Bespoke Workflow Automation (n8n / APIs)",
+    "Containerized Infrastructure (Docker / Kubernetes)",
   ];
 
   return (
@@ -132,11 +132,10 @@ const Contact = () => {
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Get In Touch</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Ready to Transform Your Business?
+            Building or modernizing a critical system?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss how our expertise can accelerate your on. 
-            We're here to help you navigate your digital transformation journey.
+            Tell us about your financial application, cloud infrastructure, integration or reliability challenge. We will discuss the requirements and engineering approach with you.
           </p>
         </div>
 

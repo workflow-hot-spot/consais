@@ -45,15 +45,15 @@ const TermsOfServicePage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">2. Service Description</h2>
                   <p className="text-muted-foreground mb-4">
-                    Consais provides comprehensive IT services including but not limited to:
+                    Consais engagements may cover the following engineering capabilities, as agreed in the applicable proposal or statement of work:
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                    <li>Custom software development and application design</li>
-                    <li>Digital transformation consulting and implementation</li>
-                    <li>Platform evolution and optimization services</li>
-                    <li>Software testing, quality assurance, and security audits</li>
-                    <li>UX/UI design and user experience optimization</li>
-                    <li>Technical support and maintenance services</li>
+                    <li>Fintech engineering and lending platforms, including loan origination and loan management workflows</li>
+                    <li>Cloud infrastructure architecture and Infrastructure as Code</li>
+                    <li>DevSecOps, CI/CD pipelines, deployment approvals and change-control practices</li>
+                    <li>Secure application engineering and financial system integrations</li>
+                    <li>Bespoke workflow automation and API integration</li>
+                    <li>Reliability engineering, business continuity and disaster recovery planning</li>
                   </ul>
                 </div>
 

@@ -4,168 +4,115 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect } from "react";
 import {
-  SiReact,
-  SiTypescript,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiOpenjdk,
-  SiPython,
-  SiMistralai,
-  SiOllama,
-  SiN8N,
-  SiPostgresql,
-  SiMongodb,
-  SiDocker,
+  SiAmazonaws, SiDocker, SiGit, SiJenkins, SiKubernetes, SiN8N,
+  SiPostgresql, SiPython, SiSpringboot, SiTerraform,
 } from "react-icons/si";
+import { Cloud, Database, LockKeyhole, Workflow } from "lucide-react";
+
+const technologyGroups = [
+  {
+    title: "Financial & Application Engineering",
+    description: "Application services and APIs that support financial workflows, integrations and operational systems.",
+    items: [
+      { name: "Java / Spring Boot", detail: "Enterprise application services", icon: SiSpringboot, color: "bg-[#6DB33F]" },
+      { name: "Python", detail: "Services, automation and integration", icon: SiPython, color: "bg-[#3776AB]" },
+      { name: "PostgreSQL", detail: "Relational data and persistence", icon: SiPostgresql, color: "bg-[#4169E1]" },
+    ],
+  },
+  {
+    title: "Cloud & Infrastructure as Code",
+    description: "Repeatable infrastructure patterns for cloud workloads, environments and deployment configuration.",
+    items: [
+      { name: "AWS", detail: "Cloud infrastructure and workloads", icon: SiAmazonaws, color: "bg-[#232F3E]" },
+      { name: "Terraform", detail: "Infrastructure as Code", icon: SiTerraform, color: "bg-[#623CE4]" },
+      { name: "Docker", detail: "Containerized applications", icon: SiDocker, color: "bg-[#2496ED]" },
+      { name: "Kubernetes", detail: "Container orchestration where appropriate", icon: SiKubernetes, color: "bg-[#326CE5]" },
+    ],
+  },
+  {
+    title: "Delivery & Workflow Automation",
+    description: "Controlled software delivery and bespoke workflows that connect applications, APIs and business processes.",
+    items: [
+      { name: "Jenkins", detail: "CI/CD pipelines and release stages", icon: SiJenkins, color: "bg-[#D24939]" },
+      { name: "Git", detail: "Version control and change history", icon: SiGit, color: "bg-[#F05032]" },
+      { name: "n8n", detail: "Bespoke workflow automation and integrations", icon: SiN8N, color: "bg-[#EA4B71]" },
+    ],
+  },
+];
+
+const principles = [
+  { title: "Security by design", text: "Authentication, authorization, secrets handling and OWASP-aligned application security practices are considered throughout engineering.", icon: LockKeyhole },
+  { title: "Controlled change", text: "Version control, pipeline approvals, deployment records and documentation help make production change reviewable.", icon: Workflow },
+  { title: "Operational resilience", text: "Infrastructure and deployment choices account for monitoring, recovery, business continuity and disaster recovery needs.", icon: Cloud },
+  { title: "Fit-for-purpose architecture", text: "We select tools based on workload, team capability, operational requirements and the complexity the system actually needs.", icon: Database },
+];
 
 const TechnologiesPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero Section */}
-        <section className="pt-24 pb-16 bg-gradient-hero">
+        <section className="pt-32 pb-16 bg-[#071827] text-white lg:pt-36 lg:pb-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
-              <Badge variant="outline" className="mb-6 bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
-              Our Core Technologies
-              </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6">
-                Our Modern, AI-Powered Technology Stack
-              </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                We leverage a diverse and robust set of technologies to build scalable, efficient, 
-                and intelligent solutions for our clients.
+            <div className="max-w-4xl mx-auto text-center">
+              <Badge variant="outline" className="mb-6 border-white/20 bg-white/5 text-cyan-200">Engineering Technology</Badge>
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">A practical stack for systems that matter.</h1>
+              <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
+                Our technology choices support financial application engineering, cloud infrastructure, controlled delivery, secure integrations and operational resilience—not technology for its own sake.
               </p>
-              
+              <div className="mt-8 flex flex-wrap justify-center gap-2 text-sm text-slate-200">
+                {["AWS", "Spring Boot", "Terraform", "Jenkins", "Docker", "Kubernetes", "n8n"].map((name) => <span key={name} className="rounded-full border border-white/15 bg-white/5 px-4 py-2">{name}</span>)}
+              </div>
             </div>
           </div>
         </section>
-     
 
-        {/* Technologies Grid */}
-        <section className="py-20 bg-background">
+        <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-              {[
-                {
-                  category: "Frontend Development",
-                  technologies: [
-                    { name: "React", color: "bg-[#149ECA]", icon: SiReact, description: "Modern UI development" },
-                    { name: "TypeScript", color: "bg-[#3178C6]", icon: SiTypescript, description: "Type-safe development" },
-                    { name: "Tailwind CSS", color: "bg-[#06B6D4]", icon: SiTailwindcss, description: "Utility-first CSS" }
-                  ]
-                },
-                {
-                  category: "Backend & APIs",
-                  technologies: [
-                    { name: "Node.js", color: "bg-[#5FA04E]", icon: SiNodedotjs, description: "Server-side JavaScript" },
-                    { name: "Java", color: "bg-[#000000]", icon: SiOpenjdk, description: "Enterprise-grade applications" },
-                    { name: "Python", color: "bg-[#3776AB]", icon: SiPython, description: "Versatile backend language" }
-                  ]
-                },
-                {
-                  category: "AI, Automation & Data",
-                  technologies: [
-                    { name: "Mistral AI", color: "bg-[#FA520F]", icon: SiMistralai, description: "High-performance LLMs" },
-                    { name: "Ollama", color: "bg-[#000000]", icon: SiOllama, description: "Local large language models" },
-                    { name: "n8n", color: "bg-[#EA4B71]", icon: SiN8N, description: "Workflow automation" }
-                  ]
-                },
-                {
-                  category: "Databases & Infrastructure",
-                  technologies: [
-                    { name: "PostgreSQL", color: "bg-[#4169E1]", icon: SiPostgresql, description: "Advanced relational database" },
-                    { name: "MongoDB", color: "bg-[#47A248]", icon: SiMongodb, description: "NoSQL document database" },
-                    { name: "Docker", color: "bg-[#2496ED]", icon: SiDocker, description: "Application containerization" }
-                  ]
-                }
-              ].map((category, categoryIndex) => (
-                <div key={categoryIndex} className="space-y-6">
-                  <h2 className="text-2xl font-bold text-foreground border-b border-border pb-2">
-                    {category.category}
-                  </h2>
-                  <div className="space-y-4">
-                    {category.technologies.map((tech, techIndex) => (
-                      <Card key={techIndex} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
-                        <CardContent className="p-6">
-                          <div className="flex items-center space-x-4">
-                            <div className={`w-12 h-12 ${tech.color} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
-                              <tech.icon className="w-6 h-6" />
-                            </div>
-                            <div>
-                              <h3 className="text-lg font-semibold text-foreground">{tech.name}</h3>
-                              <p className="text-sm text-muted-foreground">{tech.description}</p>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
+            <div className="max-w-3xl mb-12">
+              <p className="text-sm font-semibold tracking-[0.18em] text-primary">TECHNOLOGY AREAS</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Tools connected to the engineering problem.</h2>
+              <p className="mt-4 text-lg leading-8 text-muted-foreground">The stack varies by engagement. We use the tools that suit the system’s architecture, deployment model and operating constraints.</p>
+            </div>
+            <div className="grid gap-8 lg:grid-cols-3">
+              {technologyGroups.map((group) => (
+                <Card key={group.title} className="h-full border-border/60 bg-card/60">
+                  <div className="p-6 pb-2">
+                    <h3 className="text-xl font-semibold text-foreground">{group.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-muted-foreground">{group.description}</p>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Why These Technologies */}
-        <section className="py-20 bg-gradient-section">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Why We Choose These Technologies
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our technology choices are driven by performance, scalability, maintainability, and innovation.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Performance",
-                  description: "Technologies optimized for speed and efficiency in high-load environments.",
-                  icon: "🚀"
-                },
-                {
-                  title: "Scalability",
-                  description: "Solutions that grow with your business and handle increasing demands.",
-                  icon: "📈"
-                },
-                {
-                  title: "Security",
-                  description: "Enterprise-grade security features to protect your data and users.",
-                  icon: "🔒"
-                },
-                {
-                  title: "Maintainability",
-                  description: "Clean, well-documented code that's easy to update and extend.",
-                  icon: "🔧"
-                },
-                {
-                  title: "Innovation",
-                  description: "Cutting-edge technologies that keep you ahead of the competition.",
-                  icon: "💡"
-                },
-                {
-                  title: "Community",
-                  description: "Strong community support and continuous improvement ecosystem.",
-                  icon: "🤝"
-                }
-              ].map((benefit, index) => (
-                <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-4xl mb-4">{benefit.icon}</div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">{benefit.title}</h3>
-                    <p className="text-muted-foreground">{benefit.description}</p>
+                  <CardContent className="space-y-3 p-6 pt-4">
+                    {group.items.map((tech) => {
+                      const Icon = tech.icon;
+                      return <div key={tech.name} className="flex items-center gap-3 rounded-xl border border-border/60 p-3">
+                        <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-white ${tech.color}`}><Icon className="h-6 w-6" /></div>
+                        <div><h4 className="font-semibold text-foreground">{tech.name}</h4><p className="text-sm text-muted-foreground">{tech.detail}</p></div>
+                      </div>;
+                    })}
                   </CardContent>
                 </Card>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="bg-slate-50 py-16 lg:py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="text-sm font-semibold tracking-[0.18em] text-primary">ENGINEERING PRINCIPLES</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">The operating model matters as much as the stack.</h2>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              {principles.map((principle) => {
+                const Icon = principle.icon;
+                return <div key={principle.title} className="rounded-2xl border border-border bg-background p-6">
+                  <div className="flex items-start gap-4"><div className="rounded-xl bg-primary/10 p-3 text-primary"><Icon className="h-6 w-6" /></div><div><h3 className="text-lg font-semibold text-foreground">{principle.title}</h3><p className="mt-2 leading-7 text-muted-foreground">{principle.text}</p></div></div>
+                </div>;
+              })}
+            </div>
+            <p className="mt-8 text-center text-sm text-muted-foreground">Specific tools and deployment patterns are selected for each engagement; not every technology is used in every solution.</p>
           </div>
         </section>
       </main>

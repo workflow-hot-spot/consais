@@ -133,7 +133,7 @@ const Services = () => {
               </h3>
               <p className="text-muted-foreground leading-7">
                 We can engage around a complete financial platform, a specific engineering capability,
-                or the cloud and delivery infrastructure required to operate it reliably.
+                or the cloud and delivery infrastructure required to operate it reliably. Bespoke workflow automation—including n8n-based orchestration and API integrations—can support these systems without becoming a separate headline offering.
               </p>
             </div>
             <Link to="/contact" className="shrink-0">
