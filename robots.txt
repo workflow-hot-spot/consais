@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Explicitly isolate root sitemap
+Sitemap: https://www.consais.com/sitemap.xml
