@@ -4,38 +4,36 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect } from "react";
 import {
-  SiAmazonaws, SiDocker, SiGit, SiJenkins, SiKubernetes, SiN8N,
-  SiPostgresql, SiPython, SiSpringboot, SiTerraform,
-} from "react-icons/si";
-import { Cloud, Database, LockKeyhole, Workflow } from "lucide-react";
+  Cloud, Code2, Container, Database, GitBranch, LockKeyhole, Server, Workflow,
+} from "lucide-react";
 
 const technologyGroups = [
   {
     title: "Financial & Application Engineering",
     description: "Application services and APIs that support financial workflows, integrations and operational systems.",
     items: [
-      { name: "Java / Spring Boot", detail: "Enterprise application services", icon: SiSpringboot, color: "bg-[#6DB33F]" },
-      { name: "Python", detail: "Services, automation and integration", icon: SiPython, color: "bg-[#3776AB]" },
-      { name: "PostgreSQL", detail: "Relational data and persistence", icon: SiPostgresql, color: "bg-[#4169E1]" },
+      { name: "Java / Spring Boot", detail: "Enterprise application services", icon: Code2, color: "bg-[#6DB33F]" },
+      { name: "Python", detail: "Services, automation and integration", icon: Code2, color: "bg-[#3776AB]" },
+      { name: "PostgreSQL", detail: "Relational data and persistence", icon: Database, color: "bg-[#4169E1]" },
     ],
   },
   {
     title: "Cloud & Infrastructure as Code",
     description: "Repeatable infrastructure patterns for cloud workloads, environments and deployment configuration.",
     items: [
-      { name: "AWS", detail: "Cloud infrastructure and workloads", icon: SiAmazonaws, color: "bg-[#232F3E]" },
-      { name: "Terraform", detail: "Infrastructure as Code", icon: SiTerraform, color: "bg-[#623CE4]" },
-      { name: "Docker", detail: "Containerized applications", icon: SiDocker, color: "bg-[#2496ED]" },
-      { name: "Kubernetes", detail: "Container orchestration where appropriate", icon: SiKubernetes, color: "bg-[#326CE5]" },
+      { name: "AWS", detail: "Cloud infrastructure and workloads", icon: Cloud, color: "bg-[#232F3E]" },
+      { name: "Terraform", detail: "Infrastructure as Code", icon: Server, color: "bg-[#623CE4]" },
+      { name: "Docker", detail: "Containerized applications", icon: Container, color: "bg-[#2496ED]" },
+      { name: "Kubernetes", detail: "Container orchestration where appropriate", icon: Container, color: "bg-[#326CE5]" },
     ],
   },
   {
     title: "Delivery & Workflow Automation",
     description: "Controlled software delivery and bespoke workflows that connect applications, APIs and business processes.",
     items: [
-      { name: "Jenkins", detail: "CI/CD pipelines and release stages", icon: SiJenkins, color: "bg-[#D24939]" },
-      { name: "Git", detail: "Version control and change history", icon: SiGit, color: "bg-[#F05032]" },
-      { name: "n8n", detail: "Bespoke workflow automation and integrations", icon: SiN8N, color: "bg-[#EA4B71]" },
+      { name: "Jenkins", detail: "CI/CD pipelines and release stages", icon: Workflow, color: "bg-[#D24939]" },
+      { name: "Git", detail: "Version control and change history", icon: GitBranch, color: "bg-[#F05032]" },
+      { name: "n8n", detail: "Bespoke workflow automation and integrations", icon: Workflow, color: "bg-[#EA4B71]" },
     ],
   },
 ];
